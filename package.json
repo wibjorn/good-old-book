@@ -4,9 +4,95 @@
   "description": "A digitizer for old media",
   "license": "ISC",
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/good-old-book.git"
+  },
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wireit",
+    "build:client": "wireit",
+    "build:html": "wireit",
+    "build:css": "wireit",
+    "start": "npm run serve --watch",
+    "serve": "wireit",
+    "clean-wireit": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "echo \"Built all assets\"",
+      "dependencies": [
+        "build:client",
+        "build:html",
+        "build:css"
+      ]
+    },
+    "build-watch": {
+      "command": "echo \"Built all assets\"",
+      "dependencies": [
+        { "cascade": true, "script": "build:client", "watch": true },
+        { "cascade": true, "script": "build:html", "watch": true },
+        { "cascade": true, "script": "build:css", "watch": true }
+      ]
+    },
+    "build:client": {
+      "command": "esbuild ./client/index.ts --bundle --outfile=./dist/client/index.js",
+      "files": [
+        "./client/index.ts"
+      ],
+      "outputs": [
+        "./dist/client/index.js"
+      ]
+    },
+    "build:css": {
+      "command": "node ./lib/process-css.js",
+      "files": [
+        "./client/index.css"
+      ],
+      "dependencies": [
+        "build:client"
+      ],
+      "outputs": [
+        "./dist/client/index.css"
+      ]
+    },
+    "build:html": {
+      "command": "node ./lib/process-html.js",
+      "files": [
+        "./index.html",
+        "./lib/process-html.js"
+      ],
+      "dependencies": [
+        "build:client"
+      ],
+      "outputs": [
+        "./dist/client/index.html"
+      ]
+    },
+    "serve": {
+      "command": "http-server ./dist/ -c-1 -p 8080",
+      "dependencies": [
+        { "script": "build" }
+      ]
+    },
+    "clean-wireit": {
+      "command": "rimraf ./wireit ./dist"
+    }
+  },
+  "dependencies": {
+    "@azure-rest/ai-vision-image-analysis": "^1.0.0-beta.3",
+    "@microsoft/atlas-css": "4.0.0",
+    "@microsoft/atlas-js": "1.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.5.0",
+    "esbuild": "0.25.9",
+    "glob": "11.0.3",
+    "http-server": "^14.1.1",
+    "lightningcss": "^1.30.1",
+    "rimraf": "6.0.1",
+    "wireit": "0.14.12"
   }
 }
