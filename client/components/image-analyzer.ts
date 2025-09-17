@@ -10,12 +10,6 @@ declare global {
 
 @customElement("image-analyzer")
 export class ImageAnalyzer extends LitElement {
-  modernizeRegion(): unknown {
-      throw new Error("Method not implemented.");
-  }
-  summarizeRegion(): unknown {
-      throw new Error("Method not implemented.");
-  }
   static override styles = css`
     .image-overlay {
       position: absolute;
@@ -239,6 +233,14 @@ export class ImageAnalyzer extends LitElement {
   setActiveRegion(content: string): void {
     this.mode = "text-region";
     this.activeRegionContent = content;
+  }
+
+modernizeRegion(): unknown {
+      throw new Error("Method not implemented.");
+  }
+
+  summarizeRegion(): unknown {
+      throw new Error("Method not implemented.");
   }
 }
 
