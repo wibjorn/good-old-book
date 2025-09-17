@@ -39,6 +39,12 @@ export class ImageAnalyzer extends LitElement {
   mode: "none" | "text-region" = "none";
 
   @property()
+  activeRegionSummary: string = "";
+
+  @property()
+  summaryLoading: boolean = false;
+
+  @property()
   activeRegionContent: string = "";
 
   override firstUpdated() {
@@ -143,16 +149,36 @@ export class ImageAnalyzer extends LitElement {
   activeRegionMenuTemplate = () => {
     if (this.mode === "text-region") {
       return html`
-      <div>
+        <div>
           <p>Your selection</p>
-          <div style="white-space: wrap" class="padding-xs border border-radius-lg">
-              ${this.activeRegionContent}
+          <div
+            style="white-space: wrap"
+            class="padding-xs border border-radius-lg"
+          >
+            ${this.activeRegionContent}
           </div>
+
           <div class="buttons margin-block-md">
-              <button class="button" @click=${this.summarizeRegion()}>Summarize text 🚧</button>
-              <button class="button" @click=${this.modernizeRegion()}>Modernize text 🚧</button>
+            <button
+              class="button ${this.summaryLoading ? "is-loading" : ""}"
+              @click=${() => this.summarizeRegion()}
+            >
+              Summarize text
+            </button>
+            <button class="button" @click=${() => this.modernizeRegion()}>
+              Modernize text 🚧
+            </button>
           </div>
-      </div>
+
+          ${this.activeRegionSummary !== ''
+            ? html`<div
+                style="white-space: wrap"
+                class="padding-xs border border-radius-lg margin-block-sm"
+              >
+                ${this.activeRegionSummary}
+              </div>`
+            : html``}
+        </div>
       `;
     }
 
@@ -163,7 +189,7 @@ export class ImageAnalyzer extends LitElement {
     const paragraphs = this.pageAnalysisResult?.analyzeResult.paragraphs || [];
     const figures = this.pageAnalysisResult?.analyzeResult.figures || [];
     const paraTemps = paragraphs.map((para) => {
-      const content =  para.content;
+      const content = para.content;
       const svgs = para.boundingRegions.map((region, i) => {
         const points = region.polygon;
         if (!points) return null;
@@ -173,7 +199,7 @@ export class ImageAnalyzer extends LitElement {
 
         // create an svg poly
         const svg = html`
-          <svg            
+          <svg
             id="bounding-region-${i}"
             xmlns="http://www.w3.org/2000/svg"
             width=${this.imageIntrinsicWidth}
@@ -232,15 +258,34 @@ export class ImageAnalyzer extends LitElement {
 
   setActiveRegion(content: string): void {
     this.mode = "text-region";
+    this.activeRegionSummary = '';
     this.activeRegionContent = content;
   }
 
-modernizeRegion(): unknown {
-      throw new Error("Method not implemented.");
+  modernizeRegion(): unknown {
+    throw new Error("Method not implemented.");
   }
 
-  summarizeRegion(): unknown {
-      throw new Error("Method not implemented.");
+  async summarizeRegion(): Promise<void> {
+    this.summaryLoading = true;
+    const result = await fetch("http://localhost:3333/summarize-by-text", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        text: this.activeRegionContent,
+      }),
+    });
+    if (!result.ok) {
+      throw new Error("Failed to summarize region");
+    }
+
+    const json = (await result.json()) as unknown as { result: string };
+    const str = json.result;
+
+    this.activeRegionSummary = str;
+    this.summaryLoading = false;
   }
 }
 

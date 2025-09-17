@@ -1,1004 +1,6161 @@
 {
   "status": "succeeded",
-  "createdDateTime": "2025-09-17T22:59:10Z",
-  "lastUpdatedDateTime": "2025-09-17T22:59:14Z",
+  "createdDateTime": "2025-09-17T23:24:26Z",
+  "lastUpdatedDateTime": "2025-09-17T23:24:29Z",
   "analyzeResult": {
     "apiVersion": "2024-11-30",
     "modelId": "prebuilt-layout",
     "stringIndexType": "textElements",
-    "content": "Dramatis Personae\nMANFRED. CHAMOIS HUNTER. ABBOT OF ST MAURICE. MANUEL. HERMAN.\nWITCH OF THE ALPS. ARIMANES. NEMESIS. THE DESTINIES. SPIRITS, &C.\nThe scene of the Drama is amongst the Higher Alps-partly in the Castle of Manfred, and partly in the Mountains.",
+    "content": "MANFRED.\nACT I, SCENE I.\nMANFRED alone .- Scene, a Gothic Gallery .-. Time, Midnight. Man. THE lamp must be replenish'd, but even then It will not burn so long as I must watch : My slumbers-if I slumber-are not sleep, But a continuance of enduring thought, Which then I can resist not : in my heart There is a vigil, and these eyes but close To look within; and yet I live, and bear The aspect and the form of breathing men. But grief should be the instructor of the wise; Sorrow is knowledge : they who know the most Must mourn the deepest o'er the fatal truth, The Tree of Knowledge is not that of Life. Philosophy and science, and the springs Of wonder, and the wisdom of the world, I have essay'd, and in my mind there is A power to make these subject to itself- But they avail not : I have done men good, And I have met with good even among men- But this avail'd not :- Good, or evil, life, Powers, passions, all I see in other beings, Have been to me as rain unto the sands, Since that all-nameless hour. I have no dread, And feel the curse to have no natural fear, Nor fluttering throb, that beats with hopes or wishes, Or lurking love of something on the earth .- Now to my task .-\nMysterious Agency ! Ye spirits of the unbounded Universe! Whom I have sought in darkness and in light --- Ye, who do compass earth about, and dwell In subtler essence-ye, to whom the tops Of mountains inaccessible are haunts, And earth's and ocean's caves familiar things- I call upon ye by the written charm Which gives me power upon you-Rise ! appear ! [A pause.",
     "pages": [
       {
         "pageNumber": 1,
-        "angle": 0.6033986806869507,
-        "width": 1505,
-        "height": 2414,
+        "angle": -0.00989999994635582,
+        "width": 1489,
+        "height": 2313,
         "unit": "pixel",
         "words": [
           {
-            "content": "Dramatis",
+            "content": "MANFRED.",
             "polygon": [
-              644,
-              959,
-              827,
-              960,
-              827,
-              1005,
-              644,
-              1002
+              580,
+              494,
+              894,
+              494,
+              894,
+              552,
+              580,
+              552
             ],
-            "confidence": 0.869,
+            "confidence": 0.977,
             "span": {
               "offset": 0,
               "length": 8
             }
           },
           {
-            "content": "Personae",
+            "content": "ACT",
             "polygon": [
-              846,
-              960,
-              1011,
-              961,
-              1011,
-              1006,
-              845,
-              1005
+              672,
+              695,
+              752,
+              695,
+              752,
+              733,
+              672,
+              732
             ],
-            "confidence": 0.876,
+            "confidence": 0.963,
             "span": {
               "offset": 9,
-              "length": 8
-            }
-          },
-          {
-            "content": "MANFRED.",
-            "polygon": [
-              306,
-              1034,
-              483,
-              1037,
-              483,
-              1072,
-              306,
-              1070
-            ],
-            "confidence": 0.992,
-            "span": {
-              "offset": 18,
-              "length": 8
-            }
-          },
-          {
-            "content": "CHAMOIS",
-            "polygon": [
-              308,
-              1078,
-              461,
-              1079,
-              461,
-              1116,
-              308,
-              1115
-            ],
-            "confidence": 0.992,
-            "span": {
-              "offset": 27,
-              "length": 7
-            }
-          },
-          {
-            "content": "HUNTER.",
-            "polygon": [
-              473,
-              1079,
-              622,
-              1080,
-              622,
-              1117,
-              473,
-              1116
-            ],
-            "confidence": 0.992,
-            "span": {
-              "offset": 35,
-              "length": 7
-            }
-          },
-          {
-            "content": "ABBOT",
-            "polygon": [
-              310,
-              1122,
-              422,
-              1123,
-              422,
-              1160,
-              310,
-              1159
-            ],
-            "confidence": 0.993,
-            "span": {
-              "offset": 43,
-              "length": 5
-            }
-          },
-          {
-            "content": "OF",
-            "polygon": [
-              433,
-              1123,
-              473,
-              1123,
-              473,
-              1161,
-              433,
-              1160
-            ],
-            "confidence": 0.995,
-            "span": {
-              "offset": 49,
-              "length": 2
-            }
-          },
-          {
-            "content": "ST",
-            "polygon": [
-              484,
-              1123,
-              526,
-              1124,
-              526,
-              1161,
-              484,
-              1161
-            ],
-            "confidence": 0.993,
-            "span": {
-              "offset": 52,
-              "length": 2
-            }
-          },
-          {
-            "content": "MAURICE.",
-            "polygon": [
-              536,
-              1124,
-              699,
-              1125,
-              699,
-              1162,
-              536,
-              1161
-            ],
-            "confidence": 0.963,
-            "span": {
-              "offset": 55,
-              "length": 8
-            }
-          },
-          {
-            "content": "MANUEL.",
-            "polygon": [
-              306,
-              1167,
-              457,
-              1170,
-              457,
-              1203,
-              306,
-              1201
-            ],
-            "confidence": 0.994,
-            "span": {
-              "offset": 64,
-              "length": 7
-            }
-          },
-          {
-            "content": "HERMAN.",
-            "polygon": [
-              307,
-              1210,
-              466,
-              1212,
-              466,
-              1246,
-              307,
-              1245
-            ],
-            "confidence": 0.992,
-            "span": {
-              "offset": 72,
-              "length": 7
-            }
-          },
-          {
-            "content": "WITCH",
-            "polygon": [
-              910,
-              1036,
-              1029,
-              1038,
-              1029,
-              1076,
-              910,
-              1074
-            ],
-            "confidence": 0.99,
-            "span": {
-              "offset": 80,
-              "length": 5
-            }
-          },
-          {
-            "content": "OF",
-            "polygon": [
-              1042,
-              1038,
-              1082,
-              1040,
-              1081,
-              1077,
-              1042,
-              1076
-            ],
-            "confidence": 0.963,
-            "span": {
-              "offset": 86,
-              "length": 2
-            }
-          },
-          {
-            "content": "THE",
-            "polygon": [
-              1093,
-              1040,
-              1157,
-              1041,
-              1157,
-              1079,
-              1093,
-              1078
-            ],
-            "confidence": 0.994,
-            "span": {
-              "offset": 89,
               "length": 3
             }
           },
           {
-            "content": "ALPS.",
+            "content": "I,",
             "polygon": [
-              1168,
-              1041,
-              1265,
-              1044,
-              1265,
-              1082,
-              1168,
-              1079
+              769,
+              695,
+              798,
+              695,
+              798,
+              734,
+              769,
+              733
             ],
-            "confidence": 0.963,
+            "confidence": 0.338,
             "span": {
-              "offset": 93,
+              "offset": 13,
+              "length": 2
+            }
+          },
+          {
+            "content": "SCENE",
+            "polygon": [
+              652,
+              753,
+              770,
+              754,
+              770,
+              785,
+              652,
+              785
+            ],
+            "confidence": 0.637,
+            "span": {
+              "offset": 16,
               "length": 5
             }
           },
           {
-            "content": "ARIMANES.",
+            "content": "I.",
             "polygon": [
-              911,
-              1083,
-              1093,
-              1087,
-              1093,
-              1120,
-              911,
-              1118
+              796,
+              754,
+              821,
+              754,
+              821,
+              785,
+              796,
+              785
             ],
-            "confidence": 0.989,
+            "confidence": 0.963,
             "span": {
-              "offset": 99,
+              "offset": 22,
+              "length": 2
+            }
+          },
+          {
+            "content": "MANFRED",
+            "polygon": [
+              232,
+              796,
+              390,
+              796,
+              390,
+              836,
+              232,
+              836
+            ],
+            "confidence": 0.98,
+            "span": {
+              "offset": 25,
+              "length": 7
+            }
+          },
+          {
+            "content": "alone",
+            "polygon": [
+              402,
+              796,
+              476,
+              795,
+              476,
+              836,
+              402,
+              836
+            ],
+            "confidence": 0.974,
+            "span": {
+              "offset": 33,
+              "length": 5
+            }
+          },
+          {
+            "content": ".-",
+            "polygon": [
+              484,
+              795,
+              519,
+              795,
+              519,
+              836,
+              484,
+              836
+            ],
+            "confidence": 0.963,
+            "span": {
+              "offset": 39,
+              "length": 2
+            }
+          },
+          {
+            "content": "Scene,",
+            "polygon": [
+              536,
+              795,
+              630,
+              795,
+              630,
+              836,
+              536,
+              836
+            ],
+            "confidence": 0.986,
+            "span": {
+              "offset": 42,
+              "length": 6
+            }
+          },
+          {
+            "content": "a",
+            "polygon": [
+              646,
+              794,
+              667,
+              794,
+              667,
+              836,
+              646,
+              836
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 49,
+              "length": 1
+            }
+          },
+          {
+            "content": "Gothic",
+            "polygon": [
+              680,
+              794,
+              783,
+              794,
+              783,
+              836,
+              680,
+              836
+            ],
+            "confidence": 0.986,
+            "span": {
+              "offset": 51,
+              "length": 6
+            }
+          },
+          {
+            "content": "Gallery",
+            "polygon": [
+              796,
+              794,
+              906,
+              794,
+              906,
+              836,
+              796,
+              836
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 58,
+              "length": 7
+            }
+          },
+          {
+            "content": ".-.",
+            "polygon": [
+              914,
+              794,
+              961,
+              794,
+              961,
+              836,
+              914,
+              836
+            ],
+            "confidence": 0.683,
+            "span": {
+              "offset": 66,
+              "length": 3
+            }
+          },
+          {
+            "content": "Time,",
+            "polygon": [
+              969,
+              793,
+              1058,
+              793,
+              1058,
+              836,
+              969,
+              836
+            ],
+            "confidence": 0.988,
+            "span": {
+              "offset": 70,
+              "length": 5
+            }
+          },
+          {
+            "content": "Midnight.",
+            "polygon": [
+              1072,
+              793,
+              1238,
+              792,
+              1238,
+              835,
+              1072,
+              836
+            ],
+            "confidence": 0.957,
+            "span": {
+              "offset": 76,
               "length": 9
             }
           },
           {
-            "content": "NEMESIS.",
+            "content": "Man.",
             "polygon": [
-              907,
-              1126,
-              1063,
-              1130,
-              1063,
-              1163,
-              907,
-              1162
+              306,
+              840,
+              395,
+              840,
+              395,
+              881,
+              306,
+              880
             ],
-            "confidence": 0.991,
+            "confidence": 0.973,
             "span": {
-              "offset": 109,
-              "length": 8
+              "offset": 86,
+              "length": 4
             }
           },
           {
             "content": "THE",
             "polygon": [
-              907,
-              1169,
-              979,
-              1170,
-              979,
-              1206,
-              907,
-              1206
+              415,
+              840,
+              483,
+              840,
+              483,
+              881,
+              415,
+              881
             ],
-            "confidence": 0.993,
+            "confidence": 0.995,
             "span": {
-              "offset": 118,
+              "offset": 91,
               "length": 3
             }
           },
           {
-            "content": "DESTINIES.",
+            "content": "lamp",
             "polygon": [
-              990,
-              1170,
-              1172,
-              1173,
-              1172,
-              1208,
-              990,
-              1206
+              493,
+              840,
+              575,
+              840,
+              575,
+              881,
+              493,
+              881
             ],
-            "confidence": 0.963,
+            "confidence": 0.992,
             "span": {
-              "offset": 122,
-              "length": 10
+              "offset": 95,
+              "length": 4
             }
           },
           {
-            "content": "SPIRITS,",
+            "content": "must",
             "polygon": [
-              905,
-              1212,
-              1042,
-              1215,
-              1042,
-              1254,
-              905,
-              1252
+              586,
+              840,
+              667,
+              840,
+              667,
+              881,
+              586,
+              881
             ],
-            "confidence": 0.977,
+            "confidence": 0.992,
             "span": {
-              "offset": 133,
-              "length": 8
+              "offset": 100,
+              "length": 4
             }
           },
           {
-            "content": "&C.",
+            "content": "be",
             "polygon": [
-              1057,
-              1215,
-              1111,
-              1215,
-              1111,
-              1255,
-              1057,
-              1254
+              677,
+              840,
+              716,
+              840,
+              716,
+              881,
+              677,
+              881
             ],
-            "confidence": 0.71,
+            "confidence": 0.995,
             "span": {
-              "offset": 142,
+              "offset": 105,
+              "length": 2
+            }
+          },
+          {
+            "content": "replenish'd,",
+            "polygon": [
+              728,
+              840,
+              915,
+              839,
+              915,
+              880,
+              728,
+              881
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 108,
+              "length": 12
+            }
+          },
+          {
+            "content": "but",
+            "polygon": [
+              929,
+              839,
+              985,
+              839,
+              985,
+              880,
+              929,
+              880
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 121,
               "length": 3
             }
           },
           {
-            "content": "The",
+            "content": "even",
             "polygon": [
-              235,
-              1301,
-              298,
-              1302,
-              298,
-              1347,
-              234,
-              1346
+              997,
+              839,
+              1071,
+              839,
+              1071,
+              880,
+              997,
+              880
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 125,
+              "length": 4
+            }
+          },
+          {
+            "content": "then",
+            "polygon": [
+              1082,
+              839,
+              1158,
+              839,
+              1158,
+              879,
+              1082,
+              880
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 130,
+              "length": 4
+            }
+          },
+          {
+            "content": "It",
+            "polygon": [
+              271,
+              879,
+              305,
+              879,
+              305,
+              916,
+              271,
+              916
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 135,
+              "length": 2
+            }
+          },
+          {
+            "content": "will",
+            "polygon": [
+              316,
+              879,
+              378,
+              879,
+              378,
+              916,
+              316,
+              916
+            ],
+            "confidence": 0.991,
+            "span": {
+              "offset": 138,
+              "length": 4
+            }
+          },
+          {
+            "content": "not",
+            "polygon": [
+              385,
+              879,
+              441,
+              879,
+              441,
+              917,
+              385,
+              916
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 143,
+              "length": 3
+            }
+          },
+          {
+            "content": "burn",
+            "polygon": [
+              451,
+              879,
+              529,
+              879,
+              529,
+              917,
+              451,
+              917
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 147,
+              "length": 4
+            }
+          },
+          {
+            "content": "so",
+            "polygon": [
+              541,
+              879,
+              572,
+              879,
+              572,
+              917,
+              541,
+              917
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 152,
+              "length": 2
+            }
+          },
+          {
+            "content": "long",
+            "polygon": [
+              583,
+              879,
+              653,
+              879,
+              653,
+              917,
+              583,
+              917
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 155,
+              "length": 4
+            }
+          },
+          {
+            "content": "as",
+            "polygon": [
+              664,
+              879,
+              696,
+              879,
+              696,
+              917,
+              664,
+              917
             ],
             "confidence": 0.996,
             "span": {
-              "offset": 146,
+              "offset": 160,
+              "length": 2
+            }
+          },
+          {
+            "content": "I",
+            "polygon": [
+              707,
+              879,
+              725,
+              879,
+              725,
+              917,
+              707,
+              917
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 163,
+              "length": 1
+            }
+          },
+          {
+            "content": "must",
+            "polygon": [
+              735,
+              879,
+              818,
+              879,
+              818,
+              916,
+              735,
+              917
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 165,
+              "length": 4
+            }
+          },
+          {
+            "content": "watch",
+            "polygon": [
+              829,
+              879,
+              922,
+              879,
+              922,
+              916,
+              829,
+              916
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 170,
+              "length": 5
+            }
+          },
+          {
+            "content": ":",
+            "polygon": [
+              930,
+              879,
+              946,
+              879,
+              946,
+              916,
+              930,
+              916
+            ],
+            "confidence": 0.977,
+            "span": {
+              "offset": 176,
+              "length": 1
+            }
+          },
+          {
+            "content": "My",
+            "polygon": [
+              271,
+              915,
+              328,
+              915,
+              328,
+              953,
+              271,
+              953
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 178,
+              "length": 2
+            }
+          },
+          {
+            "content": "slumbers-if",
+            "polygon": [
+              339,
+              915,
+              544,
+              915,
+              544,
+              954,
+              339,
+              953
+            ],
+            "confidence": 0.99,
+            "span": {
+              "offset": 181,
+              "length": 11
+            }
+          },
+          {
+            "content": "I",
+            "polygon": [
+              555,
+              915,
+              573,
+              916,
+              574,
+              954,
+              555,
+              954
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 193,
+              "length": 1
+            }
+          },
+          {
+            "content": "slumber-are",
+            "polygon": [
+              585,
+              916,
+              797,
+              917,
+              797,
+              954,
+              585,
+              954
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 195,
+              "length": 11
+            }
+          },
+          {
+            "content": "not",
+            "polygon": [
+              808,
+              917,
+              862,
+              917,
+              862,
+              954,
+              808,
+              954
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 207,
               "length": 3
             }
           },
           {
-            "content": "scene",
+            "content": "sleep,",
             "polygon": [
-              308,
-              1302,
-              391,
-              1303,
-              391,
-              1348,
-              308,
-              1347
+              873,
+              917,
+              964,
+              918,
+              964,
+              956,
+              873,
+              954
             ],
-            "confidence": 0.978,
+            "confidence": 0.985,
             "span": {
-              "offset": 150,
-              "length": 5
+              "offset": 211,
+              "length": 6
+            }
+          },
+          {
+            "content": "But",
+            "polygon": [
+              272,
+              952,
+              337,
+              952,
+              337,
+              989,
+              272,
+              989
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 218,
+              "length": 3
+            }
+          },
+          {
+            "content": "a",
+            "polygon": [
+              349,
+              952,
+              368,
+              952,
+              368,
+              989,
+              349,
+              989
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 222,
+              "length": 1
+            }
+          },
+          {
+            "content": "continuance",
+            "polygon": [
+              379,
+              952,
+              570,
+              952,
+              570,
+              990,
+              379,
+              989
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 224,
+              "length": 11
             }
           },
           {
             "content": "of",
             "polygon": [
-              402,
-              1303,
-              436,
-              1303,
-              436,
-              1348,
-              402,
-              1348
+              582,
+              952,
+              613,
+              952,
+              613,
+              990,
+              582,
+              990
             ],
-            "confidence": 0.985,
+            "confidence": 0.996,
             "span": {
-              "offset": 156,
+              "offset": 236,
               "length": 2
             }
           },
           {
-            "content": "the",
+            "content": "enduring",
             "polygon": [
-              457,
-              1303,
-              504,
-              1304,
-              504,
-              1349,
-              457,
-              1348
+              624,
+              952,
+              767,
+              952,
+              767,
+              991,
+              624,
+              991
             ],
-            "confidence": 0.999,
+            "confidence": 0.995,
             "span": {
-              "offset": 159,
+              "offset": 239,
+              "length": 8
+            }
+          },
+          {
+            "content": "thought,",
+            "polygon": [
+              777,
+              952,
+              916,
+              953,
+              916,
+              991,
+              777,
+              991
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 248,
+              "length": 8
+            }
+          },
+          {
+            "content": "Which",
+            "polygon": [
+              275,
+              988,
+              387,
+              988,
+              387,
+              1025,
+              275,
+              1024
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 257,
+              "length": 5
+            }
+          },
+          {
+            "content": "then",
+            "polygon": [
+              396,
+              988,
+              472,
+              988,
+              472,
+              1025,
+              397,
+              1025
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 263,
+              "length": 4
+            }
+          },
+          {
+            "content": "I",
+            "polygon": [
+              482,
+              988,
+              501,
+              988,
+              502,
+              1025,
+              483,
+              1025
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 268,
+              "length": 1
+            }
+          },
+          {
+            "content": "can",
+            "polygon": [
+              512,
+              988,
+              566,
+              989,
+              566,
+              1025,
+              513,
+              1025
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 270,
               "length": 3
             }
           },
           {
-            "content": "Drama",
+            "content": "resist",
             "polygon": [
-              520,
-              1304,
-              645,
-              1305,
-              645,
-              1350,
-              520,
-              1349
+              576,
+              989,
+              663,
+              989,
+              664,
+              1026,
+              576,
+              1025
             ],
-            "confidence": 0.992,
+            "confidence": 0.995,
             "span": {
-              "offset": 163,
+              "offset": 274,
+              "length": 6
+            }
+          },
+          {
+            "content": "not",
+            "polygon": [
+              674,
+              989,
+              727,
+              989,
+              727,
+              1026,
+              674,
+              1026
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 281,
+              "length": 3
+            }
+          },
+          {
+            "content": ":",
+            "polygon": [
+              736,
+              989,
+              744,
+              989,
+              744,
+              1026,
+              736,
+              1026
+            ],
+            "confidence": 0.958,
+            "span": {
+              "offset": 285,
+              "length": 1
+            }
+          },
+          {
+            "content": "in",
+            "polygon": [
+              760,
+              989,
+              793,
+              989,
+              794,
+              1026,
+              760,
+              1026
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 287,
+              "length": 2
+            }
+          },
+          {
+            "content": "my",
+            "polygon": [
+              804,
+              989,
+              855,
+              990,
+              855,
+              1025,
+              804,
+              1026
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 290,
+              "length": 2
+            }
+          },
+          {
+            "content": "heart",
+            "polygon": [
+              865,
+              990,
+              952,
+              989,
+              952,
+              1026,
+              865,
+              1025
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 293,
+              "length": 5
+            }
+          },
+          {
+            "content": "There",
+            "polygon": [
+              276,
+              1024,
+              373,
+              1024,
+              373,
+              1062,
+              276,
+              1062
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 299,
               "length": 5
             }
           },
           {
             "content": "is",
             "polygon": [
-              664,
-              1305,
-              693,
-              1305,
-              693,
-              1350,
-              664,
-              1350
+              383,
+              1024,
+              409,
+              1024,
+              410,
+              1062,
+              383,
+              1062
             ],
-            "confidence": 0.997,
+            "confidence": 0.996,
             "span": {
-              "offset": 169,
+              "offset": 305,
               "length": 2
             }
           },
           {
-            "content": "amongst",
+            "content": "a",
             "polygon": [
-              713,
-              1305,
-              850,
-              1306,
-              850,
-              1352,
-              713,
-              1350
+              421,
+              1024,
+              440,
+              1024,
+              440,
+              1062,
+              421,
+              1062
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 308,
+              "length": 1
+            }
+          },
+          {
+            "content": "vigil,",
+            "polygon": [
+              449,
+              1024,
+              530,
+              1024,
+              530,
+              1063,
+              449,
+              1062
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 310,
+              "length": 6
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              543,
+              1024,
+              602,
+              1024,
+              602,
+              1063,
+              543,
+              1063
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 317,
+              "length": 3
+            }
+          },
+          {
+            "content": "these",
+            "polygon": [
+              612,
+              1024,
+              695,
+              1024,
+              695,
+              1062,
+              612,
+              1063
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 321,
+              "length": 5
+            }
+          },
+          {
+            "content": "eyes",
+            "polygon": [
+              706,
+              1024,
+              773,
+              1024,
+              773,
+              1061,
+              706,
+              1062
+            ],
+            "confidence": 0.988,
+            "span": {
+              "offset": 327,
+              "length": 4
+            }
+          },
+          {
+            "content": "but",
+            "polygon": [
+              784,
+              1024,
+              841,
+              1024,
+              841,
+              1061,
+              784,
+              1061
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 332,
+              "length": 3
+            }
+          },
+          {
+            "content": "close",
+            "polygon": [
+              852,
+              1024,
+              932,
+              1024,
+              932,
+              1061,
+              852,
+              1061
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 336,
+              "length": 5
+            }
+          },
+          {
+            "content": "To",
+            "polygon": [
+              277,
+              1060,
+              322,
+              1060,
+              322,
+              1097,
+              277,
+              1097
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 342,
+              "length": 2
+            }
+          },
+          {
+            "content": "look",
+            "polygon": [
+              331,
+              1060,
+              402,
+              1060,
+              402,
+              1098,
+              331,
+              1097
             ],
             "confidence": 0.992,
             "span": {
-              "offset": 172,
+              "offset": 345,
+              "length": 4
+            }
+          },
+          {
+            "content": "within;",
+            "polygon": [
+              412,
+              1060,
+              534,
+              1061,
+              534,
+              1098,
+              412,
+              1098
+            ],
+            "confidence": 0.965,
+            "span": {
+              "offset": 350,
               "length": 7
             }
           },
           {
-            "content": "the",
+            "content": "and",
             "polygon": [
-              866,
-              1306,
-              914,
-              1307,
-              914,
-              1352,
-              866,
-              1352
+              551,
+              1061,
+              610,
+              1060,
+              610,
+              1098,
+              551,
+              1098
             ],
-            "confidence": 0.999,
+            "confidence": 0.996,
             "span": {
-              "offset": 180,
+              "offset": 358,
               "length": 3
             }
           },
           {
-            "content": "Higher",
+            "content": "yet",
             "polygon": [
-              931,
-              1307,
-              1053,
-              1308,
-              1053,
-              1354,
-              931,
-              1352
+              619,
+              1060,
+              671,
+              1060,
+              671,
+              1098,
+              619,
+              1098
             ],
-            "confidence": 0.989,
+            "confidence": 0.997,
             "span": {
-              "offset": 184,
-              "length": 6
+              "offset": 362,
+              "length": 3
             }
           },
           {
-            "content": "Alps-partly",
+            "content": "I",
             "polygon": [
-              1067,
-              1308,
-              1291,
-              1312,
-              1291,
-              1357,
-              1066,
-              1354
-            ],
-            "confidence": 0.906,
-            "span": {
-              "offset": 191,
-              "length": 11
-            }
-          },
-          {
-            "content": "in",
-            "polygon": [
-              1309,
-              1312,
-              1340,
-              1313,
-              1340,
-              1358,
-              1309,
-              1358
-            ],
-            "confidence": 0.992,
-            "span": {
-              "offset": 203,
-              "length": 2
-            }
-          },
-          {
-            "content": "the",
-            "polygon": [
-              1358,
-              1313,
-              1404,
-              1315,
-              1404,
-              1359,
-              1358,
-              1359
+              681,
+              1060,
+              700,
+              1060,
+              700,
+              1098,
+              681,
+              1098
             ],
             "confidence": 0.995,
             "span": {
-              "offset": 206,
+              "offset": 366,
+              "length": 1
+            }
+          },
+          {
+            "content": "live,",
+            "polygon": [
+              710,
+              1060,
+              778,
+              1060,
+              778,
+              1097,
+              710,
+              1098
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 368,
+              "length": 5
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              791,
+              1060,
+              850,
+              1060,
+              850,
+              1097,
+              791,
+              1097
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 374,
               "length": 3
             }
           },
           {
-            "content": "Castle",
+            "content": "bear",
             "polygon": [
-              410,
-              1349,
-              514,
-              1349,
-              514,
-              1394,
-              410,
-              1392
+              858,
+              1060,
+              932,
+              1061,
+              932,
+              1097,
+              858,
+              1097
             ],
-            "confidence": 0.806,
+            "confidence": 0.992,
             "span": {
-              "offset": 210,
+              "offset": 378,
+              "length": 4
+            }
+          },
+          {
+            "content": "The",
+            "polygon": [
+              278,
+              1096,
+              342,
+              1096,
+              342,
+              1133,
+              278,
+              1133
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 383,
+              "length": 3
+            }
+          },
+          {
+            "content": "aspect",
+            "polygon": [
+              353,
+              1096,
+              451,
+              1097,
+              451,
+              1134,
+              353,
+              1134
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 387,
               "length": 6
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              462,
+              1097,
+              520,
+              1096,
+              520,
+              1134,
+              462,
+              1134
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 394,
+              "length": 3
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              530,
+              1096,
+              582,
+              1096,
+              582,
+              1133,
+              530,
+              1134
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 398,
+              "length": 3
+            }
+          },
+          {
+            "content": "form",
+            "polygon": [
+              592,
+              1096,
+              670,
+              1096,
+              670,
+              1133,
+              592,
+              1133
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 402,
+              "length": 4
             }
           },
           {
             "content": "of",
             "polygon": [
-              526,
-              1349,
-              560,
-              1350,
-              560,
-              1394,
-              526,
-              1394
+              680,
+              1096,
+              712,
+              1096,
+              712,
+              1133,
+              681,
+              1133
             ],
-            "confidence": 0.997,
+            "confidence": 0.998,
             "span": {
-              "offset": 217,
+              "offset": 407,
               "length": 2
             }
           },
           {
-            "content": "Manfred,",
+            "content": "breathing",
             "polygon": [
-              569,
-              1350,
-              731,
-              1350,
-              731,
-              1396,
-              569,
-              1394
+              722,
+              1096,
+              875,
+              1097,
+              875,
+              1133,
+              722,
+              1133
             ],
-            "confidence": 0.986,
+            "confidence": 0.996,
             "span": {
-              "offset": 220,
+              "offset": 410,
+              "length": 9
+            }
+          },
+          {
+            "content": "men.",
+            "polygon": [
+              885,
+              1097,
+              966,
+              1097,
+              966,
+              1132,
+              885,
+              1132
+            ],
+            "confidence": 0.985,
+            "span": {
+              "offset": 420,
+              "length": 4
+            }
+          },
+          {
+            "content": "But",
+            "polygon": [
+              279,
+              1132,
+              343,
+              1131,
+              343,
+              1170,
+              279,
+              1170
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 425,
+              "length": 3
+            }
+          },
+          {
+            "content": "grief",
+            "polygon": [
+              355,
+              1131,
+              429,
+              1131,
+              429,
+              1170,
+              355,
+              1170
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 429,
+              "length": 5
+            }
+          },
+          {
+            "content": "should",
+            "polygon": [
+              440,
+              1131,
+              545,
+              1131,
+              546,
+              1169,
+              440,
+              1170
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 435,
+              "length": 6
+            }
+          },
+          {
+            "content": "be",
+            "polygon": [
+              555,
+              1131,
+              591,
+              1131,
+              591,
+              1169,
+              555,
+              1169
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 442,
+              "length": 2
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              602,
+              1131,
+              654,
+              1131,
+              654,
+              1169,
+              602,
+              1169
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 445,
+              "length": 3
+            }
+          },
+          {
+            "content": "instructor",
+            "polygon": [
+              665,
+              1131,
+              823,
+              1131,
+              823,
+              1169,
+              665,
+              1169
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 449,
+              "length": 10
+            }
+          },
+          {
+            "content": "of",
+            "polygon": [
+              834,
+              1131,
+              865,
+              1132,
+              865,
+              1169,
+              834,
+              1169
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 460,
+              "length": 2
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              875,
+              1131,
+              927,
+              1131,
+              927,
+              1169,
+              875,
+              1169
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 463,
+              "length": 3
+            }
+          },
+          {
+            "content": "wise;",
+            "polygon": [
+              938,
+              1131,
+              1024,
+              1132,
+              1024,
+              1169,
+              938,
+              1169
+            ],
+            "confidence": 0.956,
+            "span": {
+              "offset": 467,
+              "length": 5
+            }
+          },
+          {
+            "content": "Sorrow",
+            "polygon": [
+              280,
+              1168,
+              397,
+              1168,
+              397,
+              1205,
+              280,
+              1204
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 473,
+              "length": 6
+            }
+          },
+          {
+            "content": "is",
+            "polygon": [
+              407,
+              1168,
+              432,
+              1168,
+              432,
+              1204,
+              407,
+              1205
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 480,
+              "length": 2
+            }
+          },
+          {
+            "content": "knowledge",
+            "polygon": [
+              442,
+              1167,
+              611,
+              1167,
+              611,
+              1204,
+              442,
+              1204
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 483,
+              "length": 9
+            }
+          },
+          {
+            "content": ":",
+            "polygon": [
+              620,
+              1167,
+              630,
+              1167,
+              630,
+              1204,
+              620,
+              1204
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 493,
+              "length": 1
+            }
+          },
+          {
+            "content": "they",
+            "polygon": [
+              644,
+              1167,
+              717,
+              1167,
+              717,
+              1204,
+              644,
+              1204
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 495,
+              "length": 4
+            }
+          },
+          {
+            "content": "who",
+            "polygon": [
+              726,
+              1167,
+              794,
+              1166,
+              794,
+              1203,
+              726,
+              1204
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 500,
+              "length": 3
+            }
+          },
+          {
+            "content": "know",
+            "polygon": [
+              804,
+              1167,
+              890,
+              1166,
+              890,
+              1203,
+              804,
+              1203
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 504,
+              "length": 4
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              900,
+              1166,
+              952,
+              1166,
+              952,
+              1203,
+              900,
+              1203
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 509,
+              "length": 3
+            }
+          },
+          {
+            "content": "most",
+            "polygon": [
+              963,
+              1166,
+              1042,
+              1166,
+              1042,
+              1202,
+              963,
+              1203
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 513,
+              "length": 4
+            }
+          },
+          {
+            "content": "Must",
+            "polygon": [
+              280,
+              1202,
+              365,
+              1203,
+              365,
+              1238,
+              280,
+              1239
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 518,
+              "length": 4
+            }
+          },
+          {
+            "content": "mourn",
+            "polygon": [
+              375,
+              1203,
+              481,
+              1203,
+              481,
+              1239,
+              375,
+              1238
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 523,
+              "length": 5
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              496,
+              1203,
+              549,
+              1202,
+              549,
+              1239,
+              496,
+              1239
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 529,
+              "length": 3
+            }
+          },
+          {
+            "content": "deepest",
+            "polygon": [
+              561,
+              1202,
+              677,
+              1202,
+              678,
+              1239,
+              561,
+              1239
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 533,
+              "length": 7
+            }
+          },
+          {
+            "content": "o'er",
+            "polygon": [
+              689,
+              1202,
+              747,
+              1202,
+              747,
+              1238,
+              689,
+              1239
+            ],
+            "confidence": 0.976,
+            "span": {
+              "offset": 541,
+              "length": 4
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              757,
+              1202,
+              809,
+              1201,
+              809,
+              1238,
+              757,
+              1238
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 546,
+              "length": 3
+            }
+          },
+          {
+            "content": "fatal",
+            "polygon": [
+              819,
+              1201,
+              894,
+              1201,
+              894,
+              1238,
+              819,
+              1238
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 550,
+              "length": 5
+            }
+          },
+          {
+            "content": "truth,",
+            "polygon": [
+              904,
+              1201,
+              1001,
+              1201,
+              1001,
+              1238,
+              904,
+              1238
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 556,
+              "length": 6
+            }
+          },
+          {
+            "content": "The",
+            "polygon": [
+              280,
+              1237,
+              344,
+              1237,
+              344,
+              1274,
+              280,
+              1273
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 563,
+              "length": 3
+            }
+          },
+          {
+            "content": "Tree",
+            "polygon": [
+              354,
+              1237,
+              427,
+              1237,
+              427,
+              1274,
+              354,
+              1274
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 567,
+              "length": 4
+            }
+          },
+          {
+            "content": "of",
+            "polygon": [
+              438,
+              1237,
+              471,
+              1237,
+              471,
+              1274,
+              438,
+              1274
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 572,
+              "length": 2
+            }
+          },
+          {
+            "content": "Knowledge",
+            "polygon": [
+              480,
+              1237,
+              657,
+              1236,
+              657,
+              1274,
+              480,
+              1274
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 575,
+              "length": 9
+            }
+          },
+          {
+            "content": "is",
+            "polygon": [
+              668,
+              1236,
+              694,
+              1236,
+              694,
+              1274,
+              668,
+              1274
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 585,
+              "length": 2
+            }
+          },
+          {
+            "content": "not",
+            "polygon": [
+              705,
+              1236,
+              758,
+              1236,
+              758,
+              1274,
+              705,
+              1274
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 588,
+              "length": 3
+            }
+          },
+          {
+            "content": "that",
+            "polygon": [
+              768,
+              1236,
+              836,
+              1236,
+              836,
+              1273,
+              768,
+              1273
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 592,
+              "length": 4
+            }
+          },
+          {
+            "content": "of",
+            "polygon": [
+              847,
+              1236,
+              879,
+              1236,
+              879,
+              1273,
+              847,
+              1273
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 597,
+              "length": 2
+            }
+          },
+          {
+            "content": "Life.",
+            "polygon": [
+              888,
+              1236,
+              967,
+              1236,
+              967,
+              1273,
+              888,
+              1273
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 600,
+              "length": 5
+            }
+          },
+          {
+            "content": "Philosophy",
+            "polygon": [
+              280,
+              1272,
+              460,
+              1272,
+              460,
+              1310,
+              280,
+              1309
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 606,
+              "length": 10
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              471,
+              1272,
+              528,
+              1272,
+              529,
+              1310,
+              471,
+              1310
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 617,
+              "length": 3
+            }
+          },
+          {
+            "content": "science,",
+            "polygon": [
+              540,
+              1272,
+              658,
+              1272,
+              658,
+              1309,
+              540,
+              1310
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 621,
               "length": 8
             }
           },
           {
             "content": "and",
             "polygon": [
-              744,
-              1350,
-              808,
-              1351,
-              808,
-              1396,
-              744,
-              1396
+              673,
+              1272,
+              731,
+              1272,
+              731,
+              1309,
+              673,
+              1309
             ],
-            "confidence": 0.993,
+            "confidence": 0.999,
             "span": {
-              "offset": 229,
+              "offset": 630,
               "length": 3
             }
           },
           {
-            "content": "partly",
+            "content": "the",
             "polygon": [
-              817,
-              1351,
-              927,
-              1352,
-              927,
-              1397,
-              817,
-              1396
+              741,
+              1272,
+              793,
+              1272,
+              793,
+              1309,
+              741,
+              1309
             ],
-            "confidence": 0.85,
+            "confidence": 0.999,
             "span": {
-              "offset": 233,
+              "offset": 634,
+              "length": 3
+            }
+          },
+          {
+            "content": "springs",
+            "polygon": [
+              805,
+              1272,
+              920,
+              1272,
+              920,
+              1309,
+              805,
+              1309
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 638,
+              "length": 7
+            }
+          },
+          {
+            "content": "Of",
+            "polygon": [
+              281,
+              1307,
+              324,
+              1307,
+              324,
+              1344,
+              281,
+              1344
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 646,
+              "length": 2
+            }
+          },
+          {
+            "content": "wonder,",
+            "polygon": [
+              333,
+              1307,
+              460,
+              1307,
+              460,
+              1344,
+              334,
+              1344
+            ],
+            "confidence": 0.99,
+            "span": {
+              "offset": 649,
+              "length": 7
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              474,
+              1307,
+              533,
+              1307,
+              533,
+              1344,
+              474,
+              1344
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 657,
+              "length": 3
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              543,
+              1306,
+              596,
+              1306,
+              596,
+              1343,
+              543,
+              1343
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 661,
+              "length": 3
+            }
+          },
+          {
+            "content": "wisdom",
+            "polygon": [
+              606,
+              1306,
+              728,
+              1306,
+              728,
+              1343,
+              606,
+              1343
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 665,
               "length": 6
             }
           },
           {
-            "content": "in",
+            "content": "of",
             "polygon": [
-              937,
-              1353,
-              974,
-              1353,
-              973,
-              1397,
-              937,
-              1397
+              738,
+              1306,
+              770,
+              1306,
+              770,
+              1343,
+              738,
+              1343
             ],
-            "confidence": 0.996,
+            "confidence": 0.997,
             "span": {
-              "offset": 240,
+              "offset": 672,
               "length": 2
             }
           },
           {
             "content": "the",
             "polygon": [
-              984,
-              1353,
-              1033,
-              1353,
-              1033,
-              1397,
-              984,
-              1397
+              779,
+              1306,
+              832,
+              1306,
+              832,
+              1343,
+              779,
+              1343
             ],
-            "confidence": 0.995,
+            "confidence": 0.999,
             "span": {
-              "offset": 243,
+              "offset": 675,
               "length": 3
             }
           },
           {
-            "content": "Mountains.",
+            "content": "world,",
             "polygon": [
-              1043,
-              1353,
-              1235,
-              1356,
-              1235,
-              1398,
-              1043,
-              1397
+              843,
+              1306,
+              947,
+              1305,
+              947,
+              1344,
+              843,
+              1343
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 679,
+              "length": 6
+            }
+          },
+          {
+            "content": "I",
+            "polygon": [
+              279,
+              1342,
+              299,
+              1342,
+              299,
+              1380,
+              279,
+              1380
+            ],
+            "confidence": 0.986,
+            "span": {
+              "offset": 686,
+              "length": 1
+            }
+          },
+          {
+            "content": "have",
+            "polygon": [
+              310,
+              1342,
+              384,
+              1342,
+              384,
+              1379,
+              310,
+              1380
+            ],
+            "confidence": 0.987,
+            "span": {
+              "offset": 688,
+              "length": 4
+            }
+          },
+          {
+            "content": "essay'd,",
+            "polygon": [
+              396,
+              1342,
+              516,
+              1341,
+              516,
+              1379,
+              396,
+              1379
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 693,
+              "length": 8
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              529,
+              1341,
+              588,
+              1341,
+              589,
+              1379,
+              529,
+              1379
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 702,
+              "length": 3
+            }
+          },
+          {
+            "content": "in",
+            "polygon": [
+              598,
+              1341,
+              630,
+              1340,
+              630,
+              1379,
+              598,
+              1379
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 706,
+              "length": 2
+            }
+          },
+          {
+            "content": "my",
+            "polygon": [
+              641,
+              1340,
+              693,
+              1340,
+              693,
+              1379,
+              642,
+              1379
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 709,
+              "length": 2
+            }
+          },
+          {
+            "content": "mind",
+            "polygon": [
+              702,
+              1340,
+              787,
+              1341,
+              787,
+              1377,
+              702,
+              1378
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 712,
+              "length": 4
+            }
+          },
+          {
+            "content": "there",
+            "polygon": [
+              796,
+              1341,
+              881,
+              1341,
+              881,
+              1377,
+              796,
+              1377
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 717,
+              "length": 5
+            }
+          },
+          {
+            "content": "is",
+            "polygon": [
+              892,
+              1341,
+              921,
+              1341,
+              921,
+              1377,
+              892,
+              1377
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 723,
+              "length": 2
+            }
+          },
+          {
+            "content": "A",
+            "polygon": [
+              279,
+              1379,
+              310,
+              1379,
+              310,
+              1416,
+              279,
+              1416
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 726,
+              "length": 1
+            }
+          },
+          {
+            "content": "power",
+            "polygon": [
+              320,
+              1379,
+              418,
+              1378,
+              419,
+              1414,
+              320,
+              1416
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 728,
+              "length": 5
+            }
+          },
+          {
+            "content": "to",
+            "polygon": [
+              427,
+              1378,
+              461,
+              1378,
+              461,
+              1414,
+              427,
+              1414
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 734,
+              "length": 2
+            }
+          },
+          {
+            "content": "make",
+            "polygon": [
+              471,
+              1378,
+              557,
+              1377,
+              557,
+              1414,
+              472,
+              1414
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 737,
+              "length": 4
+            }
+          },
+          {
+            "content": "these",
+            "polygon": [
+              568,
+              1377,
+              651,
+              1377,
+              651,
+              1413,
+              568,
+              1414
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 742,
+              "length": 5
+            }
+          },
+          {
+            "content": "subject",
+            "polygon": [
+              663,
+              1377,
+              776,
+              1376,
+              777,
+              1413,
+              663,
+              1413
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 748,
+              "length": 7
+            }
+          },
+          {
+            "content": "to",
+            "polygon": [
+              787,
+              1376,
+              820,
+              1376,
+              820,
+              1413,
+              787,
+              1413
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 756,
+              "length": 2
+            }
+          },
+          {
+            "content": "itself-",
+            "polygon": [
+              832,
+              1376,
+              952,
+              1376,
+              952,
+              1411,
+              832,
+              1412
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 759,
+              "length": 7
+            }
+          },
+          {
+            "content": "But",
+            "polygon": [
+              277,
+              1413,
+              341,
+              1413,
+              341,
+              1450,
+              277,
+              1450
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 767,
+              "length": 3
+            }
+          },
+          {
+            "content": "they",
+            "polygon": [
+              352,
+              1413,
+              426,
+              1413,
+              427,
+              1450,
+              353,
+              1450
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 771,
+              "length": 4
+            }
+          },
+          {
+            "content": "avail",
+            "polygon": [
+              437,
+              1412,
+              514,
+              1412,
+              514,
+              1449,
+              438,
+              1450
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 776,
+              "length": 5
+            }
+          },
+          {
+            "content": "not",
+            "polygon": [
+              524,
+              1412,
+              572,
+              1412,
+              572,
+              1450,
+              524,
+              1449
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 782,
+              "length": 3
+            }
+          },
+          {
+            "content": ":",
+            "polygon": [
+              579,
+              1412,
+              594,
+              1412,
+              594,
+              1450,
+              580,
+              1450
+            ],
+            "confidence": 0.943,
+            "span": {
+              "offset": 786,
+              "length": 1
+            }
+          },
+          {
+            "content": "I",
+            "polygon": [
+              611,
+              1412,
+              630,
+              1412,
+              630,
+              1450,
+              611,
+              1450
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 788,
+              "length": 1
+            }
+          },
+          {
+            "content": "have",
+            "polygon": [
+              640,
+              1412,
+              715,
+              1412,
+              715,
+              1449,
+              640,
+              1450
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 790,
+              "length": 4
+            }
+          },
+          {
+            "content": "done",
+            "polygon": [
+              727,
+              1412,
+              801,
+              1413,
+              801,
+              1450,
+              727,
+              1450
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 795,
+              "length": 4
+            }
+          },
+          {
+            "content": "men",
+            "polygon": [
+              812,
+              1413,
+              880,
+              1413,
+              881,
+              1450,
+              812,
+              1450
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 800,
+              "length": 3
+            }
+          },
+          {
+            "content": "good,",
+            "polygon": [
+              892,
+              1413,
+              978,
+              1412,
+              978,
+              1450,
+              892,
+              1450
+            ],
+            "confidence": 0.962,
+            "span": {
+              "offset": 804,
+              "length": 5
+            }
+          },
+          {
+            "content": "And",
+            "polygon": [
+              279,
+              1449,
+              350,
+              1448,
+              350,
+              1485,
+              279,
+              1485
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 810,
+              "length": 3
+            }
+          },
+          {
+            "content": "I",
+            "polygon": [
+              360,
+              1448,
+              378,
+              1448,
+              378,
+              1485,
+              360,
+              1485
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 814,
+              "length": 1
+            }
+          },
+          {
+            "content": "have",
+            "polygon": [
+              388,
+              1448,
+              463,
+              1448,
+              463,
+              1485,
+              389,
+              1485
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 816,
+              "length": 4
+            }
+          },
+          {
+            "content": "met",
+            "polygon": [
+              474,
+              1448,
+              537,
+              1448,
+              537,
+              1485,
+              474,
+              1485
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 821,
+              "length": 3
+            }
+          },
+          {
+            "content": "with",
+            "polygon": [
+              548,
+              1448,
+              623,
+              1448,
+              623,
+              1485,
+              548,
+              1485
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 825,
+              "length": 4
+            }
+          },
+          {
+            "content": "good",
+            "polygon": [
+              634,
+              1448,
+              710,
+              1448,
+              710,
+              1485,
+              634,
+              1485
+            ],
+            "confidence": 0.988,
+            "span": {
+              "offset": 830,
+              "length": 4
+            }
+          },
+          {
+            "content": "even",
+            "polygon": [
+              720,
+              1448,
+              793,
+              1448,
+              793,
+              1485,
+              720,
+              1485
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 835,
+              "length": 4
+            }
+          },
+          {
+            "content": "among",
+            "polygon": [
+              803,
+              1448,
+              907,
+              1449,
+              907,
+              1484,
+              803,
+              1485
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 840,
+              "length": 5
+            }
+          },
+          {
+            "content": "men-",
+            "polygon": [
+              917,
+              1449,
+              1024,
+              1450,
+              1024,
+              1484,
+              917,
+              1484
+            ],
+            "confidence": 0.951,
+            "span": {
+              "offset": 846,
+              "length": 4
+            }
+          },
+          {
+            "content": "But",
+            "polygon": [
+              276,
+              1484,
+              340,
+              1484,
+              340,
+              1521,
+              276,
+              1521
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 851,
+              "length": 3
+            }
+          },
+          {
+            "content": "this",
+            "polygon": [
+              351,
+              1484,
+              412,
+              1483,
+              412,
+              1520,
+              351,
+              1521
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 855,
+              "length": 4
+            }
+          },
+          {
+            "content": "avail'd",
+            "polygon": [
+              423,
+              1483,
+              530,
+              1483,
+              530,
+              1520,
+              423,
+              1520
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 860,
+              "length": 7
+            }
+          },
+          {
+            "content": "not",
+            "polygon": [
+              540,
+              1483,
+              588,
+              1483,
+              588,
+              1520,
+              540,
+              1520
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 868,
+              "length": 3
+            }
+          },
+          {
+            "content": ":-",
+            "polygon": [
+              595,
+              1483,
+              627,
+              1482,
+              627,
+              1520,
+              595,
+              1520
+            ],
+            "confidence": 0.96,
+            "span": {
+              "offset": 872,
+              "length": 2
+            }
+          },
+          {
+            "content": "Good,",
+            "polygon": [
+              645,
+              1482,
+              737,
+              1482,
+              737,
+              1521,
+              645,
+              1520
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 875,
+              "length": 5
+            }
+          },
+          {
+            "content": "or",
+            "polygon": [
+              752,
+              1482,
+              786,
+              1483,
+              786,
+              1521,
+              752,
+              1521
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 881,
+              "length": 2
+            }
+          },
+          {
+            "content": "evil,",
+            "polygon": [
+              797,
+              1483,
+              864,
+              1482,
+              864,
+              1520,
+              797,
+              1521
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 884,
+              "length": 5
+            }
+          },
+          {
+            "content": "life,",
+            "polygon": [
+              877,
+              1482,
+              941,
+              1482,
+              941,
+              1521,
+              877,
+              1520
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 890,
+              "length": 5
+            }
+          },
+          {
+            "content": "Powers,",
+            "polygon": [
+              276,
+              1521,
+              405,
+              1520,
+              405,
+              1559,
+              276,
+              1559
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 896,
+              "length": 7
+            }
+          },
+          {
+            "content": "passions,",
+            "polygon": [
+              419,
+              1520,
+              559,
+              1519,
+              559,
+              1558,
+              419,
+              1559
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 904,
+              "length": 9
+            }
+          },
+          {
+            "content": "all",
+            "polygon": [
+              573,
+              1519,
+              615,
+              1519,
+              615,
+              1558,
+              574,
+              1558
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 914,
+              "length": 3
+            }
+          },
+          {
+            "content": "I",
+            "polygon": [
+              626,
+              1519,
+              644,
+              1519,
+              644,
+              1558,
+              626,
+              1558
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 918,
+              "length": 1
+            }
+          },
+          {
+            "content": "see",
+            "polygon": [
+              660,
+              1519,
+              708,
+              1519,
+              708,
+              1558,
+              660,
+              1558
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 920,
+              "length": 3
+            }
+          },
+          {
+            "content": "in",
+            "polygon": [
+              719,
+              1519,
+              752,
+              1520,
+              752,
+              1558,
+              719,
+              1558
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 924,
+              "length": 2
+            }
+          },
+          {
+            "content": "other",
+            "polygon": [
+              763,
+              1520,
+              848,
+              1519,
+              848,
+              1557,
+              763,
+              1558
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 927,
+              "length": 5
+            }
+          },
+          {
+            "content": "beings,",
+            "polygon": [
+              857,
+              1519,
+              971,
+              1520,
+              971,
+              1559,
+              857,
+              1557
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 933,
+              "length": 7
+            }
+          },
+          {
+            "content": "Have",
+            "polygon": [
+              275,
+              1557,
+              362,
+              1556,
+              362,
+              1592,
+              276,
+              1592
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 941,
+              "length": 4
+            }
+          },
+          {
+            "content": "been",
+            "polygon": [
+              373,
+              1556,
+              449,
+              1556,
+              449,
+              1592,
+              373,
+              1592
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 946,
+              "length": 4
+            }
+          },
+          {
+            "content": "to",
+            "polygon": [
+              459,
+              1556,
+              492,
+              1556,
+              492,
+              1591,
+              459,
+              1591
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 951,
+              "length": 2
+            }
+          },
+          {
+            "content": "me",
+            "polygon": [
+              503,
+              1556,
+              551,
+              1556,
+              551,
+              1591,
+              503,
+              1591
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 954,
+              "length": 2
+            }
+          },
+          {
+            "content": "as",
+            "polygon": [
+              563,
+              1556,
+              594,
+              1556,
+              594,
+              1591,
+              563,
+              1591
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 957,
+              "length": 2
+            }
+          },
+          {
+            "content": "rain",
+            "polygon": [
+              605,
+              1556,
+              669,
+              1556,
+              669,
+              1591,
+              605,
+              1591
+            ],
+            "confidence": 0.99,
+            "span": {
+              "offset": 960,
+              "length": 4
+            }
+          },
+          {
+            "content": "unto",
+            "polygon": [
+              680,
+              1556,
+              755,
+              1556,
+              755,
+              1592,
+              680,
+              1591
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 965,
+              "length": 4
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              767,
+              1556,
+              821,
+              1556,
+              821,
+              1591,
+              767,
+              1591
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 970,
+              "length": 3
+            }
+          },
+          {
+            "content": "sands,",
+            "polygon": [
+              833,
+              1556,
+              931,
+              1556,
+              931,
+              1592,
+              833,
+              1591
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 974,
+              "length": 6
+            }
+          },
+          {
+            "content": "Since",
+            "polygon": [
+              274,
+              1592,
+              362,
+              1592,
+              362,
+              1628,
+              274,
+              1628
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 981,
+              "length": 5
+            }
+          },
+          {
+            "content": "that",
+            "polygon": [
+              373,
+              1591,
+              442,
+              1591,
+              442,
+              1628,
+              373,
+              1628
+            ],
+            "confidence": 0.991,
+            "span": {
+              "offset": 987,
+              "length": 4
+            }
+          },
+          {
+            "content": "all-nameless",
+            "polygon": [
+              452,
+              1591,
+              647,
+              1591,
+              647,
+              1627,
+              452,
+              1628
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 992,
+              "length": 12
+            }
+          },
+          {
+            "content": "hour.",
+            "polygon": [
+              658,
+              1591,
+              743,
+              1591,
+              743,
+              1628,
+              658,
+              1627
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 1005,
+              "length": 5
+            }
+          },
+          {
+            "content": "I",
+            "polygon": [
+              782,
+              1590,
+              800,
+              1590,
+              800,
+              1628,
+              782,
+              1628
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 1011,
+              "length": 1
+            }
+          },
+          {
+            "content": "have",
+            "polygon": [
+              811,
+              1590,
+              886,
+              1591,
+              886,
+              1628,
+              811,
+              1628
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1013,
+              "length": 4
+            }
+          },
+          {
+            "content": "no",
+            "polygon": [
+              897,
+              1591,
+              936,
+              1590,
+              936,
+              1628,
+              897,
+              1628
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1018,
+              "length": 2
+            }
+          },
+          {
+            "content": "dread,",
+            "polygon": [
+              948,
+              1590,
+              1049,
+              1590,
+              1049,
+              1629,
+              948,
+              1628
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1021,
+              "length": 6
+            }
+          },
+          {
+            "content": "And",
+            "polygon": [
+              276,
+              1628,
+              348,
+              1628,
+              348,
+              1664,
+              276,
+              1664
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 1028,
+              "length": 3
+            }
+          },
+          {
+            "content": "feel",
+            "polygon": [
+              358,
+              1628,
+              420,
+              1627,
+              420,
+              1664,
+              358,
+              1664
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1032,
+              "length": 4
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              430,
+              1627,
+              484,
+              1627,
+              484,
+              1663,
+              430,
+              1664
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 1037,
+              "length": 3
+            }
+          },
+          {
+            "content": "curse",
+            "polygon": [
+              496,
+              1627,
+              579,
+              1627,
+              579,
+              1663,
+              496,
+              1663
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1041,
+              "length": 5
+            }
+          },
+          {
+            "content": "to",
+            "polygon": [
+              589,
+              1627,
+              623,
+              1627,
+              623,
+              1663,
+              589,
+              1663
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 1047,
+              "length": 2
+            }
+          },
+          {
+            "content": "have",
+            "polygon": [
+              633,
+              1627,
+              709,
+              1627,
+              709,
+              1664,
+              633,
+              1664
+            ],
+            "confidence": 0.991,
+            "span": {
+              "offset": 1050,
+              "length": 4
+            }
+          },
+          {
+            "content": "no",
+            "polygon": [
+              720,
+              1627,
+              759,
+              1627,
+              760,
+              1664,
+              720,
+              1664
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 1055,
+              "length": 2
+            }
+          },
+          {
+            "content": "natural",
+            "polygon": [
+              770,
+              1627,
+              893,
+              1628,
+              893,
+              1663,
+              770,
+              1664
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 1058,
+              "length": 7
+            }
+          },
+          {
+            "content": "fear,",
+            "polygon": [
+              900,
+              1628,
+              973,
+              1628,
+              973,
+              1664,
+              900,
+              1663
+            ],
+            "confidence": 0.991,
+            "span": {
+              "offset": 1066,
+              "length": 5
+            }
+          },
+          {
+            "content": "Nor",
+            "polygon": [
+              274,
+              1663,
+              342,
+              1663,
+              343,
+              1700,
+              274,
+              1700
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1072,
+              "length": 3
+            }
+          },
+          {
+            "content": "fluttering",
+            "polygon": [
+              352,
+              1663,
+              507,
+              1663,
+              507,
+              1701,
+              352,
+              1700
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1076,
+              "length": 10
+            }
+          },
+          {
+            "content": "throb,",
+            "polygon": [
+              516,
+              1663,
+              613,
+              1662,
+              613,
+              1701,
+              516,
+              1701
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 1087,
+              "length": 6
+            }
+          },
+          {
+            "content": "that",
+            "polygon": [
+              627,
+              1662,
+              696,
+              1663,
+              696,
+              1701,
+              627,
+              1701
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1094,
+              "length": 4
+            }
+          },
+          {
+            "content": "beats",
+            "polygon": [
+              706,
+              1663,
+              789,
+              1663,
+              789,
+              1701,
+              706,
+              1701
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1099,
+              "length": 5
+            }
+          },
+          {
+            "content": "with",
+            "polygon": [
+              801,
+              1663,
+              876,
+              1663,
+              876,
+              1702,
+              801,
+              1701
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1105,
+              "length": 4
+            }
+          },
+          {
+            "content": "hopes",
+            "polygon": [
+              886,
+              1663,
+              978,
+              1664,
+              978,
+              1702,
+              886,
+              1702
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 1110,
+              "length": 5
+            }
+          },
+          {
+            "content": "or",
+            "polygon": [
+              991,
+              1664,
+              1023,
+              1664,
+              1023,
+              1702,
+              991,
+              1702
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 1116,
+              "length": 2
+            }
+          },
+          {
+            "content": "wishes,",
+            "polygon": [
+              1033,
+              1664,
+              1150,
+              1664,
+              1150,
+              1702,
+              1033,
+              1702
+            ],
+            "confidence": 0.963,
+            "span": {
+              "offset": 1119,
+              "length": 7
+            }
+          },
+          {
+            "content": "Or",
+            "polygon": [
+              274,
+              1700,
+              319,
+              1700,
+              319,
+              1737,
+              274,
+              1736
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 1127,
+              "length": 2
+            }
+          },
+          {
+            "content": "lurking",
+            "polygon": [
+              328,
+              1699,
+              450,
+              1699,
+              450,
+              1737,
+              328,
+              1737
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1130,
+              "length": 7
+            }
+          },
+          {
+            "content": "love",
+            "polygon": [
+              459,
+              1699,
+              526,
+              1699,
+              526,
+              1737,
+              460,
+              1737
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1138,
+              "length": 4
+            }
+          },
+          {
+            "content": "of",
+            "polygon": [
+              539,
+              1699,
+              571,
+              1699,
+              571,
+              1737,
+              539,
+              1737
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1143,
+              "length": 2
+            }
+          },
+          {
+            "content": "something",
+            "polygon": [
+              581,
+              1699,
+              747,
+              1699,
+              747,
+              1737,
+              581,
+              1737
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 1146,
+              "length": 9
+            }
+          },
+          {
+            "content": "on",
+            "polygon": [
+              757,
+              1699,
+              796,
+              1699,
+              796,
+              1738,
+              757,
+              1737
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 1156,
+              "length": 2
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              807,
+              1699,
+              860,
+              1699,
+              860,
+              1737,
+              807,
+              1738
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1159,
+              "length": 3
+            }
+          },
+          {
+            "content": "earth",
+            "polygon": [
+              872,
+              1699,
+              947,
+              1700,
+              947,
+              1737,
+              872,
+              1737
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 1163,
+              "length": 5
+            }
+          },
+          {
+            "content": ".-",
+            "polygon": [
+              954,
+              1700,
+              1008,
+              1700,
+              1008,
+              1737,
+              954,
+              1737
+            ],
+            "confidence": 0.913,
+            "span": {
+              "offset": 1169,
+              "length": 2
+            }
+          },
+          {
+            "content": "Now",
+            "polygon": [
+              273,
+              1736,
+              353,
+              1736,
+              353,
+              1774,
+              273,
+              1774
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1172,
+              "length": 3
+            }
+          },
+          {
+            "content": "to",
+            "polygon": [
+              362,
+              1736,
+              396,
+              1736,
+              396,
+              1774,
+              363,
+              1774
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1176,
+              "length": 2
+            }
+          },
+          {
+            "content": "my",
+            "polygon": [
+              406,
+              1736,
+              459,
+              1736,
+              459,
+              1774,
+              406,
+              1774
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1179,
+              "length": 2
+            }
+          },
+          {
+            "content": "task",
+            "polygon": [
+              469,
+              1736,
+              525,
+              1736,
+              525,
+              1773,
+              469,
+              1774
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 1182,
+              "length": 4
+            }
+          },
+          {
+            "content": ".-",
+            "polygon": [
+              533,
+              1736,
+              586,
+              1737,
+              586,
+              1773,
+              533,
+              1773
+            ],
+            "confidence": 0.914,
+            "span": {
+              "offset": 1187,
+              "length": 2
+            }
+          },
+          {
+            "content": "Mysterious",
+            "polygon": [
+              629,
+              1770,
+              808,
+              1771,
+              808,
+              1811,
+              629,
+              1809
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1190,
+              "length": 10
+            }
+          },
+          {
+            "content": "Agency",
+            "polygon": [
+              819,
+              1771,
+              941,
+              1771,
+              941,
+              1812,
+              819,
+              1811
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 1201,
+              "length": 6
+            }
+          },
+          {
+            "content": "!",
+            "polygon": [
+              949,
+              1771,
+              959,
+              1771,
+              959,
+              1812,
+              949,
+              1812
+            ],
+            "confidence": 0.645,
+            "span": {
+              "offset": 1208,
+              "length": 1
+            }
+          },
+          {
+            "content": "Ye",
+            "polygon": [
+              275,
+              1807,
+              323,
+              1806,
+              323,
+              1846,
+              275,
+              1846
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1210,
+              "length": 2
+            }
+          },
+          {
+            "content": "spirits",
+            "polygon": [
+              331,
+              1806,
+              436,
+              1806,
+              436,
+              1846,
+              331,
+              1846
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 1213,
+              "length": 7
+            }
+          },
+          {
+            "content": "of",
+            "polygon": [
+              449,
+              1806,
+              482,
+              1806,
+              482,
+              1846,
+              449,
+              1846
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1221,
+              "length": 2
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              491,
+              1806,
+              544,
+              1806,
+              544,
+              1846,
+              491,
+              1846
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1224,
+              "length": 3
+            }
+          },
+          {
+            "content": "unbounded",
+            "polygon": [
+              554,
+              1806,
+              733,
+              1807,
+              733,
+              1845,
+              555,
+              1846
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 1228,
+              "length": 9
+            }
+          },
+          {
+            "content": "Universe!",
+            "polygon": [
+              744,
+              1807,
+              904,
+              1808,
+              904,
+              1845,
+              744,
+              1845
+            ],
+            "confidence": 0.973,
+            "span": {
+              "offset": 1238,
+              "length": 9
+            }
+          },
+          {
+            "content": "Whom",
+            "polygon": [
+              275,
+              1844,
+              389,
+              1843,
+              389,
+              1881,
+              275,
+              1880
+            ],
+            "confidence": 0.991,
+            "span": {
+              "offset": 1248,
+              "length": 4
+            }
+          },
+          {
+            "content": "I",
+            "polygon": [
+              400,
+              1843,
+              417,
+              1843,
+              418,
+              1881,
+              400,
+              1881
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 1253,
+              "length": 1
+            }
+          },
+          {
+            "content": "have",
+            "polygon": [
+              427,
+              1843,
+              502,
+              1843,
+              502,
+              1881,
+              428,
+              1881
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1255,
+              "length": 4
+            }
+          },
+          {
+            "content": "sought",
+            "polygon": [
+              514,
+              1843,
+              621,
+              1843,
+              622,
+              1882,
+              514,
+              1881
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 1260,
+              "length": 6
+            }
+          },
+          {
+            "content": "in",
+            "polygon": [
+              632,
+              1843,
+              665,
+              1843,
+              665,
+              1881,
+              632,
+              1881
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 1267,
+              "length": 2
+            }
+          },
+          {
+            "content": "darkness",
+            "polygon": [
+              676,
+              1843,
+              816,
+              1844,
+              816,
+              1881,
+              677,
+              1881
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1270,
+              "length": 8
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              828,
+              1844,
+              887,
+              1844,
+              887,
+              1881,
+              828,
+              1881
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 1279,
+              "length": 3
+            }
+          },
+          {
+            "content": "in",
+            "polygon": [
+              895,
+              1844,
+              928,
+              1844,
+              928,
+              1881,
+              895,
+              1881
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1283,
+              "length": 2
+            }
+          },
+          {
+            "content": "light",
+            "polygon": [
+              938,
+              1844,
+              1006,
+              1844,
+              1006,
+              1881,
+              939,
+              1881
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 1286,
+              "length": 5
+            }
+          },
+          {
+            "content": "---",
+            "polygon": [
+              1014,
+              1844,
+              1054,
+              1844,
+              1054,
+              1881,
+              1014,
+              1881
+            ],
+            "confidence": 0.244,
+            "span": {
+              "offset": 1292,
+              "length": 3
+            }
+          },
+          {
+            "content": "Ye,",
+            "polygon": [
+              274,
+              1881,
+              332,
+              1880,
+              333,
+              1918,
+              275,
+              1918
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1296,
+              "length": 3
+            }
+          },
+          {
+            "content": "who",
+            "polygon": [
+              346,
+              1880,
+              414,
+              1880,
+              415,
+              1918,
+              347,
+              1918
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1300,
+              "length": 3
+            }
+          },
+          {
+            "content": "do",
+            "polygon": [
+              426,
+              1880,
+              465,
+              1880,
+              465,
+              1918,
+              426,
+              1918
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1304,
+              "length": 2
+            }
+          },
+          {
+            "content": "compass",
+            "polygon": [
+              477,
+              1880,
+              606,
+              1880,
+              606,
+              1918,
+              477,
+              1918
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1307,
+              "length": 7
+            }
+          },
+          {
+            "content": "earth",
+            "polygon": [
+              618,
+              1880,
+              704,
+              1880,
+              704,
+              1918,
+              618,
+              1918
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 1315,
+              "length": 5
+            }
+          },
+          {
+            "content": "about,",
+            "polygon": [
+              715,
+              1880,
+              814,
+              1880,
+              815,
+              1918,
+              715,
+              1918
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 1321,
+              "length": 6
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              829,
+              1880,
+              887,
+              1880,
+              888,
+              1918,
+              829,
+              1918
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1328,
+              "length": 3
+            }
+          },
+          {
+            "content": "dwell",
+            "polygon": [
+              899,
+              1880,
+              989,
+              1880,
+              989,
+              1917,
+              900,
+              1917
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 1332,
+              "length": 5
+            }
+          },
+          {
+            "content": "In",
+            "polygon": [
+              274,
+              1917,
+              315,
+              1917,
+              315,
+              1953,
+              274,
+              1952
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1338,
+              "length": 2
+            }
+          },
+          {
+            "content": "subtler",
+            "polygon": [
+              326,
+              1917,
+              441,
+              1917,
+              441,
+              1953,
+              326,
+              1953
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 1341,
+              "length": 7
+            }
+          },
+          {
+            "content": "essence-ye,",
+            "polygon": [
+              452,
+              1917,
+              647,
+              1917,
+              647,
+              1954,
+              452,
+              1953
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1349,
+              "length": 11
+            }
+          },
+          {
+            "content": "to",
+            "polygon": [
+              660,
+              1917,
+              695,
+              1917,
+              695,
+              1954,
+              660,
+              1954
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1361,
+              "length": 2
+            }
+          },
+          {
+            "content": "whom",
+            "polygon": [
+              706,
+              1917,
+              804,
+              1918,
+              804,
+              1955,
+              706,
+              1954
+            ],
+            "confidence": 0.987,
+            "span": {
+              "offset": 1364,
+              "length": 4
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              815,
+              1918,
+              868,
+              1918,
+              868,
+              1955,
+              815,
+              1955
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 1369,
+              "length": 3
+            }
+          },
+          {
+            "content": "tops",
+            "polygon": [
+              879,
+              1918,
+              950,
+              1919,
+              950,
+              1955,
+              879,
+              1955
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1373,
+              "length": 4
+            }
+          },
+          {
+            "content": "Of",
+            "polygon": [
+              274,
+              1953,
+              318,
+              1952,
+              318,
+              1988,
+              275,
+              1988
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1378,
+              "length": 2
+            }
+          },
+          {
+            "content": "mountains",
+            "polygon": [
+              328,
+              1952,
+              499,
+              1952,
+              499,
+              1988,
+              328,
+              1988
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1381,
+              "length": 9
+            }
+          },
+          {
+            "content": "inaccessible",
+            "polygon": [
+              509,
+              1952,
+              694,
+              1953,
+              694,
+              1989,
+              509,
+              1988
             ],
             "confidence": 0.977,
             "span": {
-              "offset": 247,
-              "length": 10
+              "offset": 1391,
+              "length": 12
+            }
+          },
+          {
+            "content": "are",
+            "polygon": [
+              705,
+              1953,
+              755,
+              1954,
+              755,
+              1989,
+              705,
+              1989
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 1404,
+              "length": 3
+            }
+          },
+          {
+            "content": "haunts,",
+            "polygon": [
+              765,
+              1954,
+              886,
+              1954,
+              886,
+              1990,
+              765,
+              1989
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 1408,
+              "length": 7
+            }
+          },
+          {
+            "content": "And",
+            "polygon": [
+              276,
+              1989,
+              349,
+              1988,
+              349,
+              2025,
+              276,
+              2025
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1416,
+              "length": 3
+            }
+          },
+          {
+            "content": "earth's",
+            "polygon": [
+              360,
+              1988,
+              469,
+              1987,
+              469,
+              2025,
+              360,
+              2025
+            ],
+            "confidence": 0.99,
+            "span": {
+              "offset": 1420,
+              "length": 7
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              481,
+              1987,
+              541,
+              1987,
+              541,
+              2025,
+              481,
+              2025
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1428,
+              "length": 3
+            }
+          },
+          {
+            "content": "ocean's",
+            "polygon": [
+              552,
+              1987,
+              662,
+              1988,
+              662,
+              2025,
+              552,
+              2025
+            ],
+            "confidence": 0.974,
+            "span": {
+              "offset": 1432,
+              "length": 7
+            }
+          },
+          {
+            "content": "caves",
+            "polygon": [
+              675,
+              1988,
+              759,
+              1988,
+              759,
+              2025,
+              675,
+              2025
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 1440,
+              "length": 5
+            }
+          },
+          {
+            "content": "familiar",
+            "polygon": [
+              770,
+              1988,
+              899,
+              1988,
+              899,
+              2026,
+              770,
+              2025
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1446,
+              "length": 8
+            }
+          },
+          {
+            "content": "things-",
+            "polygon": [
+              909,
+              1988,
+              1047,
+              1988,
+              1047,
+              2026,
+              909,
+              2026
+            ],
+            "confidence": 0.951,
+            "span": {
+              "offset": 1455,
+              "length": 7
+            }
+          },
+          {
+            "content": "I",
+            "polygon": [
+              276,
+              2025,
+              294,
+              2025,
+              295,
+              2063,
+              276,
+              2063
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 1463,
+              "length": 1
+            }
+          },
+          {
+            "content": "call",
+            "polygon": [
+              307,
+              2025,
+              364,
+              2025,
+              364,
+              2063,
+              307,
+              2063
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1465,
+              "length": 4
+            }
+          },
+          {
+            "content": "upon",
+            "polygon": [
+              377,
+              2025,
+              459,
+              2024,
+              459,
+              2063,
+              377,
+              2063
+            ],
+            "confidence": 0.991,
+            "span": {
+              "offset": 1470,
+              "length": 4
+            }
+          },
+          {
+            "content": "ye",
+            "polygon": [
+              469,
+              2024,
+              507,
+              2024,
+              507,
+              2063,
+              470,
+              2063
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1475,
+              "length": 2
+            }
+          },
+          {
+            "content": "by",
+            "polygon": [
+              517,
+              2024,
+              559,
+              2024,
+              559,
+              2063,
+              517,
+              2063
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1478,
+              "length": 2
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              568,
+              2024,
+              621,
+              2024,
+              621,
+              2063,
+              569,
+              2063
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 1481,
+              "length": 3
+            }
+          },
+          {
+            "content": "written",
+            "polygon": [
+              632,
+              2024,
+              753,
+              2025,
+              753,
+              2062,
+              632,
+              2063
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1485,
+              "length": 7
+            }
+          },
+          {
+            "content": "charm",
+            "polygon": [
+              765,
+              2025,
+              867,
+              2026,
+              867,
+              2062,
+              765,
+              2062
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 1493,
+              "length": 5
+            }
+          },
+          {
+            "content": "Which",
+            "polygon": [
+              277,
+              2062,
+              388,
+              2062,
+              388,
+              2101,
+              277,
+              2101
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 1499,
+              "length": 5
+            }
+          },
+          {
+            "content": "gives",
+            "polygon": [
+              398,
+              2062,
+              480,
+              2062,
+              480,
+              2101,
+              398,
+              2101
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 1505,
+              "length": 5
+            }
+          },
+          {
+            "content": "me",
+            "polygon": [
+              491,
+              2062,
+              540,
+              2062,
+              540,
+              2101,
+              491,
+              2101
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 1511,
+              "length": 2
+            }
+          },
+          {
+            "content": "power",
+            "polygon": [
+              550,
+              2062,
+              650,
+              2062,
+              650,
+              2101,
+              551,
+              2101
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 1514,
+              "length": 5
+            }
+          },
+          {
+            "content": "upon",
+            "polygon": [
+              659,
+              2062,
+              740,
+              2062,
+              740,
+              2101,
+              659,
+              2101
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 1520,
+              "length": 4
+            }
+          },
+          {
+            "content": "you-Rise",
+            "polygon": [
+              751,
+              2061,
+              951,
+              2060,
+              952,
+              2099,
+              751,
+              2100
+            ],
+            "confidence": 0.973,
+            "span": {
+              "offset": 1525,
+              "length": 8
+            }
+          },
+          {
+            "content": "!",
+            "polygon": [
+              961,
+              2060,
+              968,
+              2059,
+              968,
+              2099,
+              961,
+              2099
+            ],
+            "confidence": 0.977,
+            "span": {
+              "offset": 1534,
+              "length": 1
+            }
+          },
+          {
+            "content": "appear",
+            "polygon": [
+              986,
+              2059,
+              1086,
+              2058,
+              1087,
+              2096,
+              987,
+              2099
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 1536,
+              "length": 6
+            }
+          },
+          {
+            "content": "!",
+            "polygon": [
+              1094,
+              2058,
+              1111,
+              2058,
+              1111,
+              2096,
+              1094,
+              2096
+            ],
+            "confidence": 0.961,
+            "span": {
+              "offset": 1543,
+              "length": 1
+            }
+          },
+          {
+            "content": "[A",
+            "polygon": [
+              1048,
+              2094,
+              1091,
+              2094,
+              1091,
+              2132,
+              1048,
+              2132
+            ],
+            "confidence": 0.936,
+            "span": {
+              "offset": 1545,
+              "length": 2
+            }
+          },
+          {
+            "content": "pause.",
+            "polygon": [
+              1101,
+              2094,
+              1204,
+              2094,
+              1204,
+              2131,
+              1102,
+              2132
+            ],
+            "confidence": 0.948,
+            "span": {
+              "offset": 1548,
+              "length": 6
             }
           }
         ],
         "lines": [
           {
-            "content": "Dramatis Personae",
+            "content": "MANFRED.",
             "polygon": [
-              644,
-              958,
-              1011,
-              961,
-              1010,
-              1006,
-              644,
-              1003
+              580,
+              494,
+              893,
+              493,
+              893,
+              551,
+              580,
+              551
             ],
             "spans": [
               {
                 "offset": 0,
+                "length": 8
+              }
+            ]
+          },
+          {
+            "content": "ACT I,",
+            "polygon": [
+              672,
+              694,
+              798,
+              695,
+              797,
+              733,
+              672,
+              732
+            ],
+            "spans": [
+              {
+                "offset": 9,
+                "length": 6
+              }
+            ]
+          },
+          {
+            "content": "SCENE I.",
+            "polygon": [
+              652,
+              753,
+              820,
+              754,
+              820,
+              785,
+              652,
+              784
+            ],
+            "spans": [
+              {
+                "offset": 16,
+                "length": 8
+              }
+            ]
+          },
+          {
+            "content": "MANFRED alone .- Scene, a Gothic Gallery .-. Time, Midnight.",
+            "polygon": [
+              232,
+              795,
+              1237,
+              792,
+              1237,
+              834,
+              232,
+              836
+            ],
+            "spans": [
+              {
+                "offset": 25,
+                "length": 60
+              }
+            ]
+          },
+          {
+            "content": "Man. THE lamp must be replenish'd, but even then",
+            "polygon": [
+              306,
+              840,
+              1158,
+              839,
+              1158,
+              879,
+              306,
+              881
+            ],
+            "spans": [
+              {
+                "offset": 86,
+                "length": 48
+              }
+            ]
+          },
+          {
+            "content": "It will not burn so long as I must watch :",
+            "polygon": [
+              271,
+              879,
+              946,
+              878,
+              946,
+              917,
+              271,
+              917
+            ],
+            "spans": [
+              {
+                "offset": 135,
+                "length": 42
+              }
+            ]
+          },
+          {
+            "content": "My slumbers-if I slumber-are not sleep,",
+            "polygon": [
+              271,
+              915,
+              964,
+              917,
+              963,
+              955,
+              271,
+              952
+            ],
+            "spans": [
+              {
+                "offset": 178,
+                "length": 39
+              }
+            ]
+          },
+          {
+            "content": "But a continuance of enduring thought,",
+            "polygon": [
+              272,
+              952,
+              916,
+              952,
+              916,
+              991,
+              272,
+              990
+            ],
+            "spans": [
+              {
+                "offset": 218,
+                "length": 38
+              }
+            ]
+          },
+          {
+            "content": "Which then I can resist not : in my heart",
+            "polygon": [
+              275,
+              987,
+              952,
+              989,
+              952,
+              1026,
+              275,
+              1024
+            ],
+            "spans": [
+              {
+                "offset": 257,
+                "length": 41
+              }
+            ]
+          },
+          {
+            "content": "There is a vigil, and these eyes but close",
+            "polygon": [
+              276,
+              1023,
+              931,
+              1024,
+              931,
+              1063,
+              276,
+              1062
+            ],
+            "spans": [
+              {
+                "offset": 299,
+                "length": 42
+              }
+            ]
+          },
+          {
+            "content": "To look within; and yet I live, and bear",
+            "polygon": [
+              277,
+              1060,
+              931,
+              1060,
+              931,
+              1097,
+              277,
+              1098
+            ],
+            "spans": [
+              {
+                "offset": 342,
+                "length": 40
+              }
+            ]
+          },
+          {
+            "content": "The aspect and the form of breathing men.",
+            "polygon": [
+              278,
+              1096,
+              966,
+              1096,
+              966,
+              1133,
+              278,
+              1133
+            ],
+            "spans": [
+              {
+                "offset": 383,
+                "length": 41
+              }
+            ]
+          },
+          {
+            "content": "But grief should be the instructor of the wise;",
+            "polygon": [
+              279,
+              1131,
+              1024,
+              1131,
+              1024,
+              1169,
+              279,
+              1170
+            ],
+            "spans": [
+              {
+                "offset": 425,
+                "length": 47
+              }
+            ]
+          },
+          {
+            "content": "Sorrow is knowledge : they who know the most",
+            "polygon": [
+              280,
+              1168,
+              1041,
+              1166,
+              1041,
+              1203,
+              280,
+              1205
+            ],
+            "spans": [
+              {
+                "offset": 473,
+                "length": 44
+              }
+            ]
+          },
+          {
+            "content": "Must mourn the deepest o'er the fatal truth,",
+            "polygon": [
+              280,
+              1202,
+              1000,
+              1201,
+              1000,
+              1238,
+              280,
+              1239
+            ],
+            "spans": [
+              {
+                "offset": 518,
+                "length": 44
+              }
+            ]
+          },
+          {
+            "content": "The Tree of Knowledge is not that of Life.",
+            "polygon": [
+              280,
+              1237,
+              967,
+              1235,
+              967,
+              1273,
+              280,
+              1274
+            ],
+            "spans": [
+              {
+                "offset": 563,
+                "length": 42
+              }
+            ]
+          },
+          {
+            "content": "Philosophy and science, and the springs",
+            "polygon": [
+              280,
+              1272,
+              920,
+              1272,
+              920,
+              1309,
+              280,
+              1309
+            ],
+            "spans": [
+              {
+                "offset": 606,
+                "length": 39
+              }
+            ]
+          },
+          {
+            "content": "Of wonder, and the wisdom of the world,",
+            "polygon": [
+              281,
+              1307,
+              946,
+              1305,
+              946,
+              1343,
+              281,
+              1344
+            ],
+            "spans": [
+              {
+                "offset": 646,
+                "length": 39
+              }
+            ]
+          },
+          {
+            "content": "I have essay'd, and in my mind there is",
+            "polygon": [
+              279,
+              1342,
+              920,
+              1340,
+              921,
+              1377,
+              279,
+              1380
+            ],
+            "spans": [
+              {
+                "offset": 686,
+                "length": 39
+              }
+            ]
+          },
+          {
+            "content": "A power to make these subject to itself-",
+            "polygon": [
+              279,
+              1379,
+              951,
+              1375,
+              952,
+              1411,
+              279,
+              1415
+            ],
+            "spans": [
+              {
+                "offset": 726,
+                "length": 40
+              }
+            ]
+          },
+          {
+            "content": "But they avail not : I have done men good,",
+            "polygon": [
+              277,
+              1412,
+              977,
+              1412,
+              977,
+              1450,
+              277,
+              1450
+            ],
+            "spans": [
+              {
+                "offset": 767,
+                "length": 42
+              }
+            ]
+          },
+          {
+            "content": "And I have met with good even among men-",
+            "polygon": [
+              279,
+              1448,
+              1023,
+              1447,
+              1023,
+              1484,
+              279,
+              1484
+            ],
+            "spans": [
+              {
+                "offset": 810,
+                "length": 40
+              }
+            ]
+          },
+          {
+            "content": "But this avail'd not :- Good, or evil, life,",
+            "polygon": [
+              276,
+              1482,
+              941,
+              1482,
+              941,
+              1521,
+              276,
+              1520
+            ],
+            "spans": [
+              {
+                "offset": 851,
+                "length": 44
+              }
+            ]
+          },
+          {
+            "content": "Powers, passions, all I see in other beings,",
+            "polygon": [
+              276,
+              1519,
+              971,
+              1519,
+              971,
+              1558,
+              276,
+              1558
+            ],
+            "spans": [
+              {
+                "offset": 896,
+                "length": 44
+              }
+            ]
+          },
+          {
+            "content": "Have been to me as rain unto the sands,",
+            "polygon": [
+              275,
+              1556,
+              930,
+              1555,
+              930,
+              1591,
+              276,
+              1592
+            ],
+            "spans": [
+              {
+                "offset": 941,
+                "length": 39
+              }
+            ]
+          },
+          {
+            "content": "Since that all-nameless hour. I have no dread,",
+            "polygon": [
+              274,
+              1591,
+              1049,
+              1590,
+              1049,
+              1629,
+              274,
+              1629
+            ],
+            "spans": [
+              {
+                "offset": 981,
+                "length": 46
+              }
+            ]
+          },
+          {
+            "content": "And feel the curse to have no natural fear,",
+            "polygon": [
+              276,
+              1627,
+              973,
+              1627,
+              973,
+              1663,
+              276,
+              1663
+            ],
+            "spans": [
+              {
+                "offset": 1028,
+                "length": 43
+              }
+            ]
+          },
+          {
+            "content": "Nor fluttering throb, that beats with hopes or wishes,",
+            "polygon": [
+              274,
+              1662,
+              1150,
+              1663,
+              1150,
+              1702,
+              274,
+              1700
+            ],
+            "spans": [
+              {
+                "offset": 1072,
+                "length": 54
+              }
+            ]
+          },
+          {
+            "content": "Or lurking love of something on the earth .-",
+            "polygon": [
+              274,
+              1699,
+              1008,
+              1699,
+              1008,
+              1737,
+              274,
+              1737
+            ],
+            "spans": [
+              {
+                "offset": 1127,
+                "length": 44
+              }
+            ]
+          },
+          {
+            "content": "Now to my task .-",
+            "polygon": [
+              273,
+              1736,
+              586,
+              1736,
+              586,
+              1774,
+              273,
+              1774
+            ],
+            "spans": [
+              {
+                "offset": 1172,
                 "length": 17
               }
             ]
           },
           {
-            "content": "MANFRED.",
+            "content": "Mysterious Agency !",
             "polygon": [
-              306,
-              1034,
-              483,
-              1036,
-              483,
-              1072,
-              306,
-              1070
+              629,
+              1769,
+              959,
+              1771,
+              959,
+              1812,
+              629,
+              1810
             ],
             "spans": [
               {
-                "offset": 18,
-                "length": 8
+                "offset": 1190,
+                "length": 19
               }
             ]
           },
           {
-            "content": "CHAMOIS HUNTER.",
+            "content": "Ye spirits of the unbounded Universe!",
             "polygon": [
-              308,
-              1078,
-              621,
-              1080,
-              621,
-              1117,
-              308,
-              1115
+              275,
+              1806,
+              904,
+              1805,
+              904,
+              1844,
+              275,
+              1846
             ],
             "spans": [
               {
-                "offset": 27,
-                "length": 15
+                "offset": 1210,
+                "length": 37
               }
             ]
           },
           {
-            "content": "ABBOT OF ST MAURICE.",
+            "content": "Whom I have sought in darkness and in light ---",
             "polygon": [
-              310,
-              1122,
-              699,
-              1125,
-              698,
-              1162,
-              310,
-              1159
+              275,
+              1842,
+              1054,
+              1843,
+              1054,
+              1881,
+              275,
+              1881
             ],
             "spans": [
               {
-                "offset": 43,
-                "length": 20
-              }
-            ]
-          },
-          {
-            "content": "MANUEL.",
-            "polygon": [
-              306,
-              1167,
-              457,
-              1169,
-              456,
-              1203,
-              305,
-              1201
-            ],
-            "spans": [
-              {
-                "offset": 64,
-                "length": 7
-              }
-            ]
-          },
-          {
-            "content": "HERMAN.",
-            "polygon": [
-              307,
-              1210,
-              466,
-              1211,
-              466,
-              1246,
-              307,
-              1245
-            ],
-            "spans": [
-              {
-                "offset": 72,
-                "length": 7
-              }
-            ]
-          },
-          {
-            "content": "WITCH OF THE ALPS.",
-            "polygon": [
-              910,
-              1036,
-              1264,
-              1043,
-              1264,
-              1082,
-              910,
-              1074
-            ],
-            "spans": [
-              {
-                "offset": 80,
-                "length": 18
-              }
-            ]
-          },
-          {
-            "content": "ARIMANES.",
-            "polygon": [
-              911,
-              1083,
-              1093,
-              1086,
-              1092,
-              1120,
-              911,
-              1117
-            ],
-            "spans": [
-              {
-                "offset": 99,
-                "length": 9
-              }
-            ]
-          },
-          {
-            "content": "NEMESIS.",
-            "polygon": [
-              907,
-              1126,
-              1063,
-              1128,
-              1063,
-              1163,
-              906,
-              1161
-            ],
-            "spans": [
-              {
-                "offset": 109,
-                "length": 8
-              }
-            ]
-          },
-          {
-            "content": "THE DESTINIES.",
-            "polygon": [
-              907,
-              1169,
-              1172,
-              1173,
-              1171,
-              1208,
-              907,
-              1205
-            ],
-            "spans": [
-              {
-                "offset": 118,
-                "length": 14
-              }
-            ]
-          },
-          {
-            "content": "SPIRITS, &C.",
-            "polygon": [
-              905,
-              1212,
-              1111,
-              1215,
-              1110,
-              1254,
-              905,
-              1252
-            ],
-            "spans": [
-              {
-                "offset": 133,
-                "length": 12
-              }
-            ]
-          },
-          {
-            "content": "The scene of the Drama is amongst the Higher Alps-partly in the",
-            "polygon": [
-              235,
-              1301,
-              1403,
-              1312,
-              1403,
-              1359,
-              234,
-              1345
-            ],
-            "spans": [
-              {
-                "offset": 146,
-                "length": 63
-              }
-            ]
-          },
-          {
-            "content": "Castle of Manfred, and partly in the Mountains.",
-            "polygon": [
-              410,
-              1349,
-              1235,
-              1353,
-              1235,
-              1398,
-              410,
-              1393
-            ],
-            "spans": [
-              {
-                "offset": 210,
+                "offset": 1248,
                 "length": 47
+              }
+            ]
+          },
+          {
+            "content": "Ye, who do compass earth about, and dwell",
+            "polygon": [
+              274,
+              1880,
+              989,
+              1879,
+              989,
+              1918,
+              274,
+              1918
+            ],
+            "spans": [
+              {
+                "offset": 1296,
+                "length": 41
+              }
+            ]
+          },
+          {
+            "content": "In subtler essence-ye, to whom the tops",
+            "polygon": [
+              274,
+              1916,
+              950,
+              1918,
+              950,
+              1955,
+              274,
+              1952
+            ],
+            "spans": [
+              {
+                "offset": 1338,
+                "length": 39
+              }
+            ]
+          },
+          {
+            "content": "Of mountains inaccessible are haunts,",
+            "polygon": [
+              274,
+              1951,
+              885,
+              1953,
+              885,
+              1989,
+              274,
+              1988
+            ],
+            "spans": [
+              {
+                "offset": 1378,
+                "length": 37
+              }
+            ]
+          },
+          {
+            "content": "And earth's and ocean's caves familiar things-",
+            "polygon": [
+              276,
+              1987,
+              1046,
+              1988,
+              1046,
+              2025,
+              276,
+              2025
+            ],
+            "spans": [
+              {
+                "offset": 1416,
+                "length": 46
+              }
+            ]
+          },
+          {
+            "content": "I call upon ye by the written charm",
+            "polygon": [
+              276,
+              2023,
+              867,
+              2024,
+              867,
+              2063,
+              276,
+              2062
+            ],
+            "spans": [
+              {
+                "offset": 1463,
+                "length": 35
+              }
+            ]
+          },
+          {
+            "content": "Which gives me power upon you-Rise ! appear !",
+            "polygon": [
+              277,
+              2062,
+              1111,
+              2058,
+              1111,
+              2098,
+              277,
+              2101
+            ],
+            "spans": [
+              {
+                "offset": 1499,
+                "length": 45
+              }
+            ]
+          },
+          {
+            "content": "[A pause.",
+            "polygon": [
+              1048,
+              2094,
+              1203,
+              2093,
+              1203,
+              2131,
+              1048,
+              2132
+            ],
+            "spans": [
+              {
+                "offset": 1545,
+                "length": 9
               }
             ]
           }
@@ -1006,7 +6163,7 @@
         "spans": [
           {
             "offset": 0,
-            "length": 257
+            "length": 1554
           }
         ]
       }
@@ -1017,98 +6174,98 @@
         "spans": [
           {
             "offset": 0,
-            "length": 17
+            "length": 8
           }
         ],
         "boundingRegions": [
           {
             "pageNumber": 1,
             "polygon": [
-              644,
-              958,
-              1011,
-              961,
-              1010,
-              1006,
-              644,
-              1003
+              580,
+              494,
+              893,
+              493,
+              893,
+              551,
+              580,
+              551
             ]
           }
         ],
         "role": "title",
-        "content": "Dramatis Personae"
+        "content": "MANFRED."
       },
       {
         "spans": [
           {
-            "offset": 18,
-            "length": 61
+            "offset": 9,
+            "length": 15
           }
         ],
         "boundingRegions": [
           {
             "pageNumber": 1,
             "polygon": [
-              306,
-              1034,
-              699,
-              1037,
-              698,
-              1248,
-              304,
-              1245
+              652,
+              694,
+              821,
+              695,
+              820,
+              785,
+              652,
+              784
             ]
           }
         ],
-        "content": "MANFRED. CHAMOIS HUNTER. ABBOT OF ST MAURICE. MANUEL. HERMAN."
+        "content": "ACT I, SCENE I."
       },
       {
         "spans": [
           {
-            "offset": 80,
-            "length": 65
+            "offset": 25,
+            "length": 1164
           }
         ],
         "boundingRegions": [
           {
             "pageNumber": 1,
             "polygon": [
-              909,
-              1036,
-              1264,
-              1043,
-              1260,
-              1259,
-              904,
-              1252
+              232,
+              795,
+              1237,
+              792,
+              1240,
+              1772,
+              235,
+              1775
             ]
           }
         ],
-        "content": "WITCH OF THE ALPS. ARIMANES. NEMESIS. THE DESTINIES. SPIRITS, &C."
+        "content": "MANFRED alone .- Scene, a Gothic Gallery .-. Time, Midnight. Man. THE lamp must be replenish'd, but even then It will not burn so long as I must watch : My slumbers-if I slumber-are not sleep, But a continuance of enduring thought, Which then I can resist not : in my heart There is a vigil, and these eyes but close To look within; and yet I live, and bear The aspect and the form of breathing men. But grief should be the instructor of the wise; Sorrow is knowledge : they who know the most Must mourn the deepest o'er the fatal truth, The Tree of Knowledge is not that of Life. Philosophy and science, and the springs Of wonder, and the wisdom of the world, I have essay'd, and in my mind there is A power to make these subject to itself- But they avail not : I have done men good, And I have met with good even among men- But this avail'd not :- Good, or evil, life, Powers, passions, all I see in other beings, Have been to me as rain unto the sands, Since that all-nameless hour. I have no dread, And feel the curse to have no natural fear, Nor fluttering throb, that beats with hopes or wishes, Or lurking love of something on the earth .- Now to my task .-"
       },
       {
         "spans": [
           {
-            "offset": 146,
-            "length": 111
+            "offset": 1190,
+            "length": 364
           }
         ],
         "boundingRegions": [
           {
             "pageNumber": 1,
             "polygon": [
-              234,
-              1301,
-              1403,
-              1312,
-              1403,
-              1403,
-              234,
-              1392
+              275,
+              1766,
+              1206,
+              1773,
+              1203,
+              2133,
+              272,
+              2126
             ]
           }
         ],
-        "content": "The scene of the Drama is amongst the Higher Alps-partly in the Castle of Manfred, and partly in the Mountains."
+        "content": "Mysterious Agency ! Ye spirits of the unbounded Universe! Whom I have sought in darkness and in light --- Ye, who do compass earth about, and dwell In subtler essence-ye, to whom the tops Of mountains inaccessible are haunts, And earth's and ocean's caves familiar things- I call upon ye by the written charm Which gives me power upon you-Rise ! appear ! [A pause."
       }
     ],
     "styles": [],
@@ -1118,7 +6275,7 @@
         "spans": [
           {
             "offset": 0,
-            "length": 257
+            "length": 1554
           }
         ],
         "elements": [
