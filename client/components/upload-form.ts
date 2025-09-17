@@ -59,6 +59,7 @@ export class UploadForm extends LitElement {
       ) as HTMLInputElement;
       if (input) {
         input.value = "";
+        this.requestUpdate();
       }
     };
     reader.onerror = () => {

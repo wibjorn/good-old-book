@@ -10,6 +10,12 @@ declare global {
 
 @customElement("image-analyzer")
 export class ImageAnalyzer extends LitElement {
+  modernizeRegion(): unknown {
+      throw new Error("Method not implemented.");
+  }
+  summarizeRegion(): unknown {
+      throw new Error("Method not implemented.");
+  }
   static override styles = css`
     .image-overlay {
       position: absolute;
@@ -37,6 +43,9 @@ export class ImageAnalyzer extends LitElement {
 
   @property()
   mode: "none" | "text-region" = "none";
+
+  @property()
+  activeRegionContent: string = "";
 
   override firstUpdated() {
     const image = this.renderRoot.querySelector(
@@ -81,9 +90,9 @@ export class ImageAnalyzer extends LitElement {
       <shared-stylesheet style-id="global-styles"></shared-stylesheet>
       <div class="margin-top-xs">
         <div class="markdown">
-          <h2>Analyize your upload</h2>
+          <h2 class="margin-bottom-md">Analyize your upload</h2>
         </div>
-        ${this.regionMenuTemplate()}
+        ${this.activeRegionMenuTemplate()}
         <div class="image position-relative">
           <img data-original-image src=${this.imageUrl} />
           <div class="image-overlay">${this.createBoundingElements()}</div>
@@ -137,13 +146,19 @@ export class ImageAnalyzer extends LitElement {
     </details>`;
   };
 
-  regionMenuTemplate = () => {
+  activeRegionMenuTemplate = () => {
     if (this.mode === "text-region") {
       return html`
-        <div class="buttons">
-            <button class="button">Summarize text 🚧</button>
-            <button class="button">Modernize text 🚧</button>
-        </div>
+      <div>
+          <p>Your selection</p>
+          <div style="white-space: wrap" class="padding-xs border border-radius-lg">
+              ${this.activeRegionContent}
+          </div>
+          <div class="buttons margin-block-md">
+              <button class="button" @click=${this.summarizeRegion()}>Summarize text 🚧</button>
+              <button class="button" @click=${this.modernizeRegion()}>Modernize text 🚧</button>
+          </div>
+      </div>
       `;
     }
 
@@ -154,6 +169,7 @@ export class ImageAnalyzer extends LitElement {
     const paragraphs = this.pageAnalysisResult?.analyzeResult.paragraphs || [];
     const figures = this.pageAnalysisResult?.analyzeResult.figures || [];
     const paraTemps = paragraphs.map((para) => {
+      const content =  para.content;
       const svgs = para.boundingRegions.map((region, i) => {
         const points = region.polygon;
         if (!points) return null;
@@ -173,7 +189,7 @@ export class ImageAnalyzer extends LitElement {
           >
             <polygon
               role="button"
-              @click=${() => this.setActiveRegion()}
+              @click=${() => this.setActiveRegion(content)}
               style="cursor: pointer; z-index: 3"
               fill="rgba(255, 0, 0, 0.09)"
               points="${coords.map((c) => `${c.x},${c.y}`).join(" ")}"
@@ -220,9 +236,9 @@ export class ImageAnalyzer extends LitElement {
     return [...paraTemps.flat(), ...figTemps.flat()];
   }
 
-  setActiveRegion(): void {
+  setActiveRegion(content: string): void {
     this.mode = "text-region";
-    debugger;
+    this.activeRegionContent = content;
   }
 }
 
