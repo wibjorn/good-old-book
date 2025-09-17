@@ -11,9 +11,6 @@ declare global {
 export class SimpleGreeting extends LitElement {
   static override styles = css``;
 
-  @property()
-  name = "Somebody";
-
   override connectedCallback(): void {
     super.connectedCallback();
   }
@@ -21,10 +18,9 @@ export class SimpleGreeting extends LitElement {
   override render() {
     return html`<div>
       <shared-stylesheet style-id="global-styles"></shared-stylesheet>
-      <div class="markdown layout-padding padding-block-md">
-        <h1>Hello, ${this.name}!</h1>
+      <div class="layout-padding padding-block-lg">
+        <h1 class="font-size-lg font-weight-bold ">Add text</h1>
         <p>Welcome to Good Old Book, an application that leverages Azure's AI Vision capabilities to bring historical texts to life.</p>
-        
       </div>
     </div>`;
   }

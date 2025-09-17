@@ -10,7 +10,21 @@ declare global {
 
 @customElement("image-analyzer")
 export class ImageAnalyzer extends LitElement {
-  static override styles = css``;
+  static override styles = css`
+    .image-overlay {
+      position: absolute;
+      inset: 0;
+    }
+
+    svg {
+      position: absolute;
+      inset: 0;
+    }
+
+    polygon {
+      stroke: black;
+    }
+  `;
 
   @property()
   imageElement!: HTMLImageElement;
@@ -20,6 +34,9 @@ export class ImageAnalyzer extends LitElement {
 
   @property()
   imageUrl!: string | undefined;
+
+  @property()
+  mode: "none" | "text-region" = "none";
 
   override firstUpdated() {
     const image = this.renderRoot.querySelector(
@@ -66,11 +83,13 @@ export class ImageAnalyzer extends LitElement {
         <div class="markdown">
           <h2>Analyize your upload</h2>
         </div>
-        <div class="image">
+        ${this.regionMenuTemplate()}
+        <div class="image position-relative">
           <img data-original-image src=${this.imageUrl} />
+          <div class="image-overlay">${this.createBoundingElements()}</div>
         </div>
       </div>
-      ${this.metadataTemplate()}
+      ${this.metadataTemplate()} ${this.rawTextTemplate()}
     </div>`;
   }
 
@@ -103,4 +122,123 @@ export class ImageAnalyzer extends LitElement {
       </table>
     </div>
   </details>`;
+
+  rawTextTemplate = () => {
+    if (!this.pageAnalysisResult) {
+      return html``;
+    }
+    return html`<details class="accordion" open>
+      <summary>
+        <div class="accordion-header">Raw Text</div>
+      </summary>
+      <div class="accordion-content">
+        <pre>${this.pageAnalysisResult.analyzeResult.content}</pre>
+      </div>
+    </details>`;
+  };
+
+  regionMenuTemplate = () => {
+    if (this.mode === "text-region") {
+      return html`
+        <div class="buttons">
+            <button class="button">Summarize text 🚧</button>
+            <button class="button">Modernize text 🚧</button>
+        </div>
+      `;
+    }
+
+    return html``;
+  };
+
+  private createBoundingElements(): unknown {
+    const paragraphs = this.pageAnalysisResult?.analyzeResult.paragraphs || [];
+    const figures = this.pageAnalysisResult?.analyzeResult.figures || [];
+    const paraTemps = paragraphs.map((para) => {
+      const svgs = para.boundingRegions.map((region, i) => {
+        const points = region.polygon;
+        if (!points) return null;
+
+        // convert polygon to a [x, y] tuple array
+        const coords = convertPointsToUsableXYCoordinates(points);
+
+        // create an svg poly
+        const svg = html`
+          <svg            
+            id="bounding-region-${i}"
+            xmlns="http://www.w3.org/2000/svg"
+            width=${this.imageIntrinsicWidth}
+            height=${this.imageIntrinsicHeight}
+            viewBox="0 0  ${this.imageIntrinsicWidth} ${this
+              .imageIntrinsicHeight}"
+          >
+            <polygon
+              role="button"
+              @click=${() => this.setActiveRegion()}
+              style="cursor: pointer; z-index: 3"
+              fill="rgba(255, 0, 0, 0.09)"
+              points="${coords.map((c) => `${c.x},${c.y}`).join(" ")}"
+              stroke-width="3"
+            />
+          </svg>
+        `;
+        return svg;
+      });
+      return svgs;
+    });
+
+    const figTemps = figures.map((fig) => {
+      const svgs = fig.boundingRegions.map((region, i) => {
+        const points = region.polygon;
+        if (!points) return null;
+
+        // convert polygon to a [x, y] tuple array
+        const coords = convertPointsToUsableXYCoordinates(points);
+
+        // create an svg poly
+        const svg = html`
+          <svg
+            role="button"
+            id="bounding-region-${i}"
+            xmlns="http://www.w3.org/2000/svg"
+            width=${this.imageIntrinsicWidth}
+            height=${this.imageIntrinsicHeight}
+            viewBox="0 0  ${this.imageIntrinsicWidth} ${this
+              .imageIntrinsicHeight}"
+          >
+            <polygon
+              fill="rgba(30, 0, 255, 0.09)"
+              points="${coords.map((c) => `${c.x},${c.y}`).join(" ")}"
+              stroke-width="3"
+            />
+          </svg>
+        `;
+        return svg;
+      });
+      return svgs;
+    });
+
+    return [...paraTemps.flat(), ...figTemps.flat()];
+  }
+
+  setActiveRegion(): void {
+    this.mode = "text-region";
+    debugger;
+  }
+}
+
+/**
+ *
+ * Bounding polygon on the page, or the entire page if not specified.
+ * Coordinates specified relative to the top-left of the page. The numbers
+ * represent the x, y values of the polygon vertices, clockwise from the left
+ * (-180 degrees inclusive) relative to the element orientation.
+ */
+function convertPointsToUsableXYCoordinates(
+  points: number[]
+): { x: number; y: number }[] {
+  const result: { x: number; y: number }[] = [];
+  for (let i = 0; i < points.length; i += 2) {
+    result.push({ x: points[i], y: points[i + 1] });
+  }
+  return result;
 }

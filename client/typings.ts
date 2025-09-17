@@ -13,6 +13,7 @@ export interface AnalyzeResult {
     pages:           Page[];
     tables:          any[];
     paragraphs:      Paragraph[];
+    figures?:       Figure[];
     styles:          any[];
     contentFormat:   string;
     sections:        Section[];
@@ -52,6 +53,10 @@ export interface Paragraph {
     boundingRegions: BoundingRegion[];
     role?:           string;
     content:         string;
+}
+
+export interface Figure extends Paragraph{
+    id?: string;
 }
 
 export interface BoundingRegion {

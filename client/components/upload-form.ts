@@ -1,13 +1,18 @@
 import { LitElement, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { DIAnalysisResult } from "../typings";
+import { createContext } from '@lit/context';
+import type { DIAnalysisResult} from '../typings'
 import { ImageAnalyzer } from "./image-analyzer";
+import {provide} from '@lit/context';
 
 declare global {
   interface HTMLElementTagNameMap {
     "upload-form": UploadForm;
   }
 }
+
+
+export const pageAnalysisContext = createContext<DIAnalysisResult | undefined>('pageAnalysis');
 
 @customElement("upload-form")
 export class UploadForm extends LitElement {
@@ -17,7 +22,7 @@ export class UploadForm extends LitElement {
   @property()
   previewUrl: string | undefined;
 
-  @property()
+  @provide({context: pageAnalysisContext})
   pageAnalysisResult: DIAnalysisResult | undefined;
 
   @property()
@@ -26,8 +31,6 @@ export class UploadForm extends LitElement {
   constructor() {
     super();
   }
-
-
 
   async _onSubmit(e: Event) {
     e.preventDefault();
@@ -50,6 +53,13 @@ export class UploadForm extends LitElement {
       console.log(`data:${file.type};base64,${base64}`);
       await this.postBase64ImageToEndpoint(base64 as string);
       this.status = "uploaded";
+
+      const input = this.shadowRoot?.querySelector(
+        'input[type="file"]'
+      ) as HTMLInputElement;
+      if (input) {
+        input.value = "";
+      }
     };
     reader.onerror = () => {
       this.status = "error";
@@ -72,11 +82,11 @@ export class UploadForm extends LitElement {
       throw new Error("Failed to upload image");
     }
 
-    const json =( await result.json()) as unknown as DIAnalysisResult;
+    const json = (await result.json()) as unknown as DIAnalysisResult;
 
-    if (json.status !== 'succeeded') {
-      this.status = 'error';
-       this.pageAnalysisResult = undefined
+    if (json.status !== "succeeded") {
+      this.status = "error";
+      this.pageAnalysisResult = undefined;
       return;
     }
 
@@ -114,7 +124,7 @@ export class UploadForm extends LitElement {
     if (!target?.files?.length) {
       return;
     }
-    console.log(target.files[0]);
+
     const previewURL = window.URL.createObjectURL(target.files[0]);
     if (previewURL) {
       this.previewUrl = previewURL;
@@ -141,14 +151,14 @@ export class UploadForm extends LitElement {
   }
 
   async createAnalysisElement() {
-      if (!this.previewUrl && !this.pageAnalysisResult) {
-        return;
-      }
+    if (!this.previewUrl && !this.pageAnalysisResult) {
+      return;
+    }
     const element = new ImageAnalyzer(this.previewUrl, this.pageAnalysisResult);
-      if (!element) {
-        return;
-      }
-    
+    if (!element) {
+      return;
+    }
+
     this.imageAnalyzer = element;
   }
 
@@ -165,7 +175,7 @@ export class UploadForm extends LitElement {
             <div class="card-content">
               <div class="image margin-bottom-md">
                 <svg
-                  ?hidden=${!!this.previewUrl}
+                  ?hidden=${!!this.previewUrl && this.status !== "uploaded"}
                   viewBox="0 0 48 48"
                   fill="CanvasText"
                   xmlns="http://www.w3.org/2000/svg"
@@ -178,9 +188,10 @@ export class UploadForm extends LitElement {
 
                 <img
                   src=${this.previewUrl}
-                  ?hidden=${!this.previewUrl}
+                  ?hidden=${!this.previewUrl || this.status == "uploaded"}
                   alt="File preview"
                   style="display: block;"
+                  f
                 />
               </div>
               <p>${this.getTextByStatus()}</p>
@@ -195,9 +206,8 @@ export class UploadForm extends LitElement {
             <button
               class="button"
               type="button"
-              @change
               @click=${this.relayButtonClicks}
-              ?disabled=${this.status !== "ready"}
+              ?disabled=${this.status === "uploading"}
             >
               Choose file
             </button>
@@ -220,9 +230,7 @@ export class UploadForm extends LitElement {
             ${this.status === "uploading" ? "Uploading..." : "Upload"}
           </button>
         </form>
-        <div>
-          ${this.imageAnalyzer}
-        </div>
+        <div>${this.status === "uploaded" ? this.imageAnalyzer : html``}</div>
       </div>
     `;
   }
