@@ -9,14 +9,17 @@
     "url": "https://github.com/yourusername/good-old-book.git"
   },
   "type": "commonjs",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "wireit",
     "build:client": "wireit",
+    "build:server": "wireit",
     "build:html": "wireit",
     "build:css": "wireit",
     "start": "npm run serve --watch",
+    "start-client": "wireit",
+    "start-server": "wireit",
     "serve": "wireit",
     "clean-wireit": "wireit"
   },
@@ -29,70 +32,107 @@
         "build:css"
       ]
     },
-    "build-watch": {
-      "command": "echo \"Built all assets\"",
-      "dependencies": [
-        { "cascade": true, "script": "build:client", "watch": true },
-        { "cascade": true, "script": "build:html", "watch": true },
-        { "cascade": true, "script": "build:css", "watch": true }
+    "build:server": {
+      "command": "esbuild ./server/index.ts --tsconfig=tsconfig.json --bundle --platform=node --target=node24.7 --outfile=./dist-server/index.js",
+      "files": [
+        "server/index.ts"
+      ],
+      "outputs": [
+        "/dist/server/index.js"
       ]
     },
     "build:client": {
-      "command": "esbuild ./client/index.ts --bundle --outfile=./dist/client/index.js",
+      "command": "esbuild ./client/index.ts --tsconfig=tsconfig.json --bundle --outfile=./dist/client/index.js",
       "files": [
-        "./client/index.ts"
+        "client/index.ts",
+        "client/components/*.ts"
       ],
       "outputs": [
-        "./dist/client/index.js"
+        "/dist/client/index.js"
       ]
     },
     "build:css": {
       "command": "node ./lib/process-css.js",
       "files": [
-        "./client/index.css"
+        "client/index.css"
       ],
       "dependencies": [
         "build:client"
       ],
       "outputs": [
-        "./dist/client/index.css"
+        "/dist/client/index.css"
       ]
     },
     "build:html": {
       "command": "node ./lib/process-html.js",
       "files": [
-        "./index.html",
+        "index.html",
         "./lib/process-html.js"
       ],
       "dependencies": [
+        "build:css",
         "build:client"
       ],
       "outputs": [
-        "./dist/client/index.html"
+        "/dist/index.html"
+      ]
+    },
+    "start-client": {
+      "command": "live-server ./dist/ --no-browser -p 8080",
+      "service": {
+        "readyWhen": {
+          "lineMatches": "Serving"
+        }
+      },
+      "dependencies": [
+        "build"
+      ]
+    },
+    "start-server": {
+      "command": "nodemon ./dist-server/index.js",
+      "service": {
+        "readyWhen": {
+          "lineMatches": "[nodemon] starting `node ./dist-server/index.js`"
+        }
+      },
+      "dependencies": [
+        "build:server"
       ]
     },
     "serve": {
-      "command": "http-server ./dist/ -c-1 -p 8080",
+      "command": "echo \"serving\"",
       "dependencies": [
-        { "script": "build" }
+        "start-client",
+        "start-server"
       ]
     },
     "clean-wireit": {
-      "command": "rimraf ./wireit ./dist"
+      "command": "rimraf ./wireit /dist"
     }
   },
   "dependencies": {
-    "@azure-rest/ai-vision-image-analysis": "^1.0.0-beta.3",
+    "@azure-rest/ai-document-intelligence": "1.1.0",
+    "@azure-rest/ai-vision-image-analysis": "1.0.0-beta.3",
+    "@azure/identity": "4.12.0",
     "@microsoft/atlas-css": "4.0.0",
-    "@microsoft/atlas-js": "1.15.0"
+    "@microsoft/atlas-js": "1.15.0",
+    "@types/dotenv": "^6.1.1",
+    "dotenv": "^17.2.2",
+    "fastify-plugin": "5.0.1",
+    "fastify": "^5.6.0",
+    "@fastify/cors": "11.1.0"
   },
   "devDependencies": {
     "@types/node": "24.5.0",
     "esbuild": "0.25.9",
+    "fastify-tsconfig": "^3.0.0",
     "glob": "11.0.3",
-    "http-server": "^14.1.1",
     "lightningcss": "^1.30.1",
+    "lit": "3.3.1",
+    "live-server": "1.2.2",
+    "nodemon": "^3.1.10",
     "rimraf": "6.0.1",
+    "typescript": "5.9.2",
     "wireit": "0.14.12"
   }
 }

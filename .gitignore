@@ -76,9 +76,11 @@ jspm_packages/
 .next
 out
 
-# Nuxt.js build / generate output
+# generated output
 .nuxt
 dist
+dist-server
+dist-client
 
 # Gatsby files
 .cache/

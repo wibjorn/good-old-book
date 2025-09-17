@@ -1,0 +1,10 @@
+{
+  "extends": "fastify-tsconfig",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "outDir": "./dist-server",
+    "rootDir": "./server",
+  },
+  "include": ["@types", "server/**/*.ts"],
+  "exclude": ["client/**/*.ts"]
+}
