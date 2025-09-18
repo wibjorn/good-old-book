@@ -23,6 +23,14 @@ import { IncomingMessage, Server, ServerResponse } from "http";
 import path from "path";
 import cors from "@fastify/cors";
 import { AzureOpenAI } from "openai";
+import { BlobServiceClient } from "@azure/storage-blob";
+
+const accountName = "gobstorage";
+const accountURL = `https://${accountName}.blob.core.windows.net`;
+const blobServiceClient = new BlobServiceClient(
+  accountURL,
+  new DefaultAzureCredential()
+);
 
 // Load environment variables from .env file
 dotenv.config();
@@ -33,6 +41,7 @@ declare module "fastify" {
     DIClient: typeof DIClient;
     analyzeBase64document: typeof analyzeBase64document;
     summarizeByText: typeof summarizeByText;
+    generateVideoJob: typeof generateVideoJob;
   }
 }
 
@@ -73,10 +82,13 @@ server.register(
   fp(async (fastify: FastifyInstance, opts: FastifyPluginOptions) => {
     fastify.decorateRequest("analyzeBase64document", analyzeBase64document);
     fastify.decorateRequest("summarizeByText", summarizeByText);
+    fastify.decorateRequest("generateVideoJob", generateVideoJob);
 
-    const res = await generateVideoJob("The speaker invokes and summons the universal spirits—sought in darkness and light, dwelling in subtle realms and in mountain tops and caves—and commands them by a written charm to rise and appear.");
-    console.log({res});
-})
+    // testing
+    //    generateVideoJob(
+    //       "The speaker invokes and summons the universal spirits—sought in darkness and light, dwelling in subtle realms and in mountain tops and caves—and commands them by a written charm to rise and appear."
+    //     );
+  })
 );
 
 // Allow CORS from any localhost port
@@ -163,7 +175,33 @@ server.post("/summarize-by-text", async (request, reply) => {
 
     const result = await request.summarizeByText(text);
 
-    reply.code(200).send({result});
+    reply.code(200).send({ result });
+  } catch (e) {
+    console.log({ error: e });
+    reply.code(500).send({
+      error: "Internal server error during text summarization",
+      details: e instanceof Error ? e.message : "Unknown error",
+    });
+  }
+});
+
+// POST handler for text summarization
+server.post("/video-from-text", async (request, reply) => {
+  const { text } = request.body as {
+    text: string;
+  };
+
+  try {
+    // Validate input
+    if (!text || typeof text !== "string") {
+      return reply.code(400).send({
+        error: "Invalid input: text field is required and must be a string",
+      });
+    }
+
+    const result = await request.generateVideoJob(text);
+
+    reply.code(200).send(result);
   } catch (e) {
     console.log({ error: e });
     reply.code(500).send({
@@ -221,45 +259,135 @@ const summarizeByText = async (text: string) => {
   return response.choices[0].message.content;
 };
 
+async function generateVideoJob(prompt: string) {
+  const endpoint = process.env["SORA_OPENAI_ENDPOINT"];
+  const apiKey = process.env["AZURE_OPENAI_API_KEY"];
+  const body = {
+    model: "sora",
+    prompt,
+    height: "1080",
+    width: "1080",
+    n_seconds: "5",
+    n_variants: "1",
+  };
+
+  const response = await fetch(
+    `${endpoint}/openai/v1/video/generations/jobs?api-version=preview` as string,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Api-key": apiKey as string,
+      },
+      body: JSON.stringify(body),
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(
+      `Request failed: ${response.status} ${await response.text()}`
+    );
+  }
+  console.log({ response });
+
+  const res = await response.json();
+  console.log({ body: res });
+  if (!res || !res.id) {
+    throw new Error("Invalid response: missing job_id");
+  }
+  console.log({ res });
+
+  return pollVideoJobAndDownload(endpoint as string, res.id, apiKey as string);
+}
 
 /**
- * curl -X POST "URLHERE" \
-  -H "Content-Type: application/json" \
-  -H "Api-key: xyz" \
-  -d '{
-     "model": "sora",
-     "prompt" : "The speaker invokes and summons the universal spirits—sought in darkness and light, dwelling in subtle realms and in mountain tops and caves—and commands them by a written charm to rise and appear.",
-     "height" : "1080",
-     "width" : "1080",
-     "n_seconds" : "5",
-     "n_variants" : "1"
-    }'
+ * # 2. Poll for job status and retrieve generated video (Node.js version)
  */
-async function generateVideoJob(prompt: string) {
-    const endpoint =
-        process.env["SORA_OPENAI_ENDPOINT"];
-    const apiKey = process.env["AZURE_OPENAI_API_KEY"];
-    const body = {
-        model: "sora",
-        prompt,
-        height: "1080",
-        width: "1080",
-        n_seconds: "5",
-        n_variants: "1",
-    };
+async function pollVideoJobAndDownload(
+  endpoint: string,
+  jobId: string,
+  apiKey: string
+) {
+  const statusUrl = `${endpoint}/openai/v1/video/generations/jobs/${jobId}?api-version=preview`;
+  let statusResponse: any;
+  let status: string | undefined;
 
-    const response = await fetch(endpoint as string, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Api-key": apiKey as string,
-        },
-        body: JSON.stringify(body),
+  // Poll until job status is succeeded, failed, or cancelled
+  do {
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+    const res = await fetch(statusUrl, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Api-key": apiKey,
+      },
     });
+    statusResponse = await res.json();
+    status = statusResponse.status;
+    console.log(`Job status: ${status}`);
+  } while (!["succeeded", "failed", "cancelled"].includes(status ?? ""));
 
-    if (!response.ok) {
-        throw new Error(`Request failed: ${response.status} ${await response.text()}`);
+  // Retrieve generated video if succeeded
+  if (status === "succeeded") {
+    const generations = statusResponse.generations ?? [];
+    if (generations.length > 0) {
+      const generationId = generations[0].id;
+      const videoUrl = `${endpoint}/openai/v1/video/generations/${generationId}/content/video?api-version=preview`;
+      const videoRes = await fetch(videoUrl, {
+        method: "GET",
+        headers: {
+          "Api-key": apiKey,
+        },
+      });
+      if (videoRes.ok) {
+        const outputFilename = `output-${jobId}.mp4`;
+        const fileStream = await fs.open(outputFilename, "w");
+        const buffer = Buffer.from(await videoRes.arrayBuffer());
+        await fileStream.writeFile(buffer);
+        await fileStream.close();
+        console.log(
+          `✅ Generated video saved as "${outputFilename}", uploading to blob storage`
+        );
+
+        const res = await uploadVideoToBlobStorage(jobId, buffer);
+
+        if (!res.success) {
+          throw new Error("Failed to upload video to Blob Storage");
+        }
+
+        return res;
+      } else {
+        throw new Error(
+          `Failed to download video: ${
+            videoRes.status
+          } ${await videoRes.text()}`
+        );
+      }
+    } else {
+      throw new Error("No generations found in job result.");
     }
+  } else {
+    throw new Error(`Job didn't succeed. Status: ${status}`);
+  }
+}
 
-    return await response.json();
+async function uploadVideoToBlobStorage(
+  jobId: string,
+  buffer: Buffer
+): Promise<{ success: boolean; url?: string }> {
+  const containerClient = blobServiceClient.getContainerClient("videos");
+  const blobName = `output-${jobId}.mp4`;
+  const blockBlobClient = containerClient.getBlockBlobClient(blobName);
+
+  try {
+    // upload buffer;
+    const uploadstatus = await blockBlobClient.uploadData(buffer);
+    console.log(
+      `Uploaded video to Blob Storage: ${JSON.stringify(uploadstatus)}`
+    );
+    return { success: true, url: blockBlobClient.url };
+  } catch (error) {
+    console.error("Error uploading video to Blob Storage:", error);
+    return { success: false };
+  }
 }

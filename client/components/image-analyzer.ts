@@ -24,6 +24,14 @@ export class ImageAnalyzer extends LitElement {
     polygon {
       stroke: black;
     }
+
+    .video-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-block: 20px;
+      border-top: 1px solid #ccc;
+    }
   `;
 
   @property()
@@ -46,6 +54,12 @@ export class ImageAnalyzer extends LitElement {
 
   @property()
   activeRegionContent: string = "";
+
+  @property()
+  videoGenerationLoading: boolean = false;
+
+  @property()
+  videos: { url: string; description: string }[] = [];
 
   override firstUpdated() {
     const image = this.renderRoot.querySelector(
@@ -165,18 +179,44 @@ export class ImageAnalyzer extends LitElement {
             >
               Summarize text
             </button>
-            <button class="button" @click=${() => this.modernizeRegion()}>
-              Modernize text 🚧
+            <button
+              class="button ${this.summaryLoading ? "is-loading" : ""}"
+              @click=${() => this.createVideo()}
+            >
+              Create video
             </button>
           </div>
 
-          ${this.activeRegionSummary !== ''
+          ${this.activeRegionSummary !== ""
             ? html`<div
                 style="white-space: wrap"
                 class="padding-xs border border-radius-lg margin-block-sm"
               >
                 ${this.activeRegionSummary}
               </div>`
+            : html``}
+          ${this.videos.length > 0
+            ? html`
+                <div class="video-gallery">
+                  <h3 class="margin-bottom-sm">Generated Videos</h3>
+                  ${this.videos.map(
+                    (video) => html`
+                      <div class="video-item margin-bottom-md">
+                        <video
+                          controls
+                          width="1080"
+                          height="1080"
+                          class="border border-radius-lg"
+                        >
+                          <source src="${video.url}" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                        <p class="margin-top-xs">${video.description}</p>
+                      </div>
+                    `
+                  )}
+                </div>
+              `
             : html``}
         </div>
       `;
@@ -258,12 +298,28 @@ export class ImageAnalyzer extends LitElement {
 
   setActiveRegion(content: string): void {
     this.mode = "text-region";
-    this.activeRegionSummary = '';
+    this.activeRegionSummary = "";
     this.activeRegionContent = content;
   }
 
-  modernizeRegion(): unknown {
-    throw new Error("Method not implemented.");
+  async createVideo(): Promise<void> {
+    this.videoGenerationLoading = true;
+    const result = await fetch("http://localhost:3333/video-from-text", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        text: this.activeRegionContent,
+      }),
+    });
+    if (!result.ok) {
+      throw new Error("Failed to summarize region");
+    }
+
+    const json = (await result.json()) as unknown as { url: string };
+    this.videos.push({ url: json.url, description: this.activeRegionContent });
+    this.videoGenerationLoading = false;
   }
 
   async summarizeRegion(): Promise<void> {
