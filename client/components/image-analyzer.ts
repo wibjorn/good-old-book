@@ -241,6 +241,7 @@ export class ImageAnalyzer extends LitElement {
         const svg = html`
           <svg
             id="bounding-region-${i}"
+            style="pointer-events: none;"
             xmlns="http://www.w3.org/2000/svg"
             width=${this.imageIntrinsicWidth}
             height=${this.imageIntrinsicHeight}
@@ -250,7 +251,7 @@ export class ImageAnalyzer extends LitElement {
             <polygon
               role="button"
               @click=${() => this.setActiveRegion(content)}
-              style="cursor: pointer; z-index: 3"
+              style="pointer-events: auto; cursor: pointer; z-index: 3"
               fill="rgba(255, 0, 0, 0.09)"
               points="${coords.map((c) => `${c.x},${c.y}`).join(" ")}"
               stroke-width="3"
@@ -273,6 +274,7 @@ export class ImageAnalyzer extends LitElement {
         // create an svg poly
         const svg = html`
           <svg
+            style="pointer-events: none;"
             role="button"
             id="bounding-region-${i}"
             xmlns="http://www.w3.org/2000/svg"
@@ -282,6 +284,7 @@ export class ImageAnalyzer extends LitElement {
               .imageIntrinsicHeight}"
           >
             <polygon
+              style="pointer-events: auto; z-index: 2"
               fill="rgba(30, 0, 255, 0.09)"
               points="${coords.map((c) => `${c.x},${c.y}`).join(" ")}"
               stroke-width="3"
