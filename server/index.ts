@@ -73,7 +73,10 @@ server.register(
   fp(async (fastify: FastifyInstance, opts: FastifyPluginOptions) => {
     fastify.decorateRequest("analyzeBase64document", analyzeBase64document);
     fastify.decorateRequest("summarizeByText", summarizeByText);
-  })
+
+    const res = await generateVideoJob("The speaker invokes and summons the universal spirits—sought in darkness and light, dwelling in subtle realms and in mountain tops and caves—and commands them by a written charm to rise and appear.");
+    console.log({res});
+})
 );
 
 // Allow CORS from any localhost port
@@ -217,3 +220,46 @@ const summarizeByText = async (text: string) => {
 
   return response.choices[0].message.content;
 };
+
+
+/**
+ * curl -X POST "URLHERE" \
+  -H "Content-Type: application/json" \
+  -H "Api-key: xyz" \
+  -d '{
+     "model": "sora",
+     "prompt" : "The speaker invokes and summons the universal spirits—sought in darkness and light, dwelling in subtle realms and in mountain tops and caves—and commands them by a written charm to rise and appear.",
+     "height" : "1080",
+     "width" : "1080",
+     "n_seconds" : "5",
+     "n_variants" : "1"
+    }'
+ */
+async function generateVideoJob(prompt: string) {
+    const endpoint =
+        process.env["SORA_OPENAI_ENDPOINT"];
+    const apiKey = process.env["AZURE_OPENAI_API_KEY"];
+    const body = {
+        model: "sora",
+        prompt,
+        height: "1080",
+        width: "1080",
+        n_seconds: "5",
+        n_variants: "1",
+    };
+
+    const response = await fetch(endpoint as string, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Api-key": apiKey as string,
+        },
+        body: JSON.stringify(body),
+    });
+
+    if (!response.ok) {
+        throw new Error(`Request failed: ${response.status} ${await response.text()}`);
+    }
+
+    return await response.json();
+}
