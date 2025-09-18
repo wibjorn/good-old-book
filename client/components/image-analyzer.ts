@@ -180,7 +180,7 @@ export class ImageAnalyzer extends LitElement {
               Summarize text
             </button>
             <button
-              class="button ${this.summaryLoading ? "is-loading" : ""}"
+              class="button ${this.videoGenerationLoading ? "is-loading" : ""}"
               @click=${() => this.createVideo()}
             >
               Create video
